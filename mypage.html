@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더줌플러스</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <!-- <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper_style.css"> -->
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+    <!-- swiper -->
+    <!-- <link rel="stylesheet" href="css/swiper.css"> -->
+    <script type="text/javascript" src="js/swiper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script>
+        $(function () {
+            var swiper = new Swiper('.thumb_product_mypage', {
+                loop: false,
+                autoplay: false,
+                pagination: '.swiper-pagination',
+                grabCursor:false,
+                effect: 'slide',
+                disableOnInteraction: false,
+            });
+        })
+    </script>
+</head>
+
+<body>
+
+    <div id="wrap">
+        <div class="wrap_01 wrap_js topBar" id="here_ind">
+            <!-- 공통, 상단-->
+            <div class="content_top">
+                <div class="content_top_div">
+                    <a href="#"><span class="xia xi-angle-left-thin"></span></a>
+                    <span>마이페이지</span>
+                </div>
+                <ul class="content_top_ul">
+                    <li>
+                        <a href="search.html"><img src="img/search.png" alt="검색"></a>
+                    </li>
+                    <!-- 메인페이지만 미노출 -->
+                    <li>
+                        <a href="index.html"><img src="img/home.png" alt="홈"></a>
+                    </li>
+                    <!-- // 메인페이지만 미노출 -->
+                    <li>
+                        <a href="cart.html">
+                            <img src="img/cart.png" alt="장바구니">
+                            <span>99</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 공통, 상단-->
+        </div>
+
+        <div class="wrap_01 wrap_js">
+            <div class="content_center">
+                <div class="myInfor_wp">
+                    <div class="myInfor">
+                        <a href="point.html">
+                            <div class="myInforCon">
+                                <p class="name">이준혁 <span>님</span></p>
+                                <p class="point">보유 포인트 <span>800P</span></p>
+                                <img src="img/arrow_go.png" alt="더보기">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="orderInfor">
+                        <dl onclick="location.href='order_list.html';">
+                            <dd>15</dd>
+                            <dt>주문상품</dt>
+                        </dl>
+                        <dl onclick="location.href='like.html';">
+                            <dd>3</dd>
+                            <dt>찜한상품</dt>
+                        </dl>
+                        <dl onclick="location.href='coupon.html';">
+                            <dd>3</dd>
+                            <dt>쿠폰</dt>
+                        </dl>
+                        <dl onclick="location.href='review.html';">
+                            <dd>0</dd>
+                            <dt>구매후기</dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sbucont_wp bg_gray">
+            <div class="tit">
+                <h2>진행 중인 주문  <b>15</b></h2>
+                <p onclick="location.href='order_list.html';">주문내역 보기
+                    <span>
+                        <img src="img/arrow_go2.png" alt="더보기">
+                    </span>
+                </p>
+            </div>
+            <div class="odering_infor">
+                <div class="orderStep_wp">
+                    <div class="orderStep">
+                        <!-- active 일때 이미지 _on추가 -->
+                        <ul>
+                            <li class="active"><img src="img/icon_order1_on.png" alt="결제완료">결제완료</li>
+                            <li class="active"><span></span><img src="img/icon_order2_on.png" alt="배송준비중">배송준비중</li>
+                            <li class="active" class=""><span></span><img src="img/icon_order3_on.png" alt="배송중">배송중</li>
+                            <li class=""><span></span><img src="img/icon_order4.png" alt="결제완료">배송완료</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="thumb_03_wp">
+                    <a href="#">
+                        <div class="thumb_03">
+                            <!-- 가장 최근 상품 1개만 노출-->
+                            <p class="thumb_img_03"><img src="img/thumb03.png" alt="썸네일"></p>
+                            <dl class="thumb_infor_03">
+                                <dt>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                <dd>옵션 : 없음 <span>/</span> 수량 : 1개</dd>
+                                <dd>122,400<span>원</span></dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 찜한 상품 없는경우 미노출, 찜한 상품 있는 경우 최대 10개까지 노출-->
+        <div class="sbucont_wp">
+            <div class="tit">
+                <h2>찜한 상품</h2>
+            </div>
+            <div class="thumb_product_mypage">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom_bd"></div>
+        <!-- // 찜한 상품 없는경우 미노출, 찜한 상품 있는 경우 최대 10개까지 노출-->
+        <!-- 최근 본 상품 있는 경우 최대 10개까지 노출-->
+        <div class="sbucont_wp">
+            <div class="tit">
+                <h2>최근 본 상품</h2>
+            </div>
+            <div class="thumb_product_mypage">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <div class="thumb_02">
+                                <p class="thumb_img_02"><img src="img/thumb_02.png" alt="썸네일"></p>
+                                <dl class="thumb_infor_02">
+                                    <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                    <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                    <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                </dl>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포인트내역</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <!-- <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper_style.css"> -->
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="css/swiper.css">
+    <script type="text/javascript" src="js/swiper.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+   <!-- rating slider -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+</head>
+
+<body>
+
+
+    <div id="wrap" class="point_content">
+        <div class="wrap_01 wrap_js topBar" id="here_ind">
+            <!-- 공통, 상단-->
+            <div class="content_top">
+                <div class="content_top_div">
+                    <a href="#"><span class="xia xi-angle-left-thin"></span></a>
+                    <span>포인트</span>
+                </div>
+                <ul class="content_top_ul">
+                    <li>
+                        <a href="search.html"><img src="img/search.png" alt="검색"></a>
+                    </li>
+                    <!-- 메인페이지만 미노출 -->
+                    <li>
+                        <a href="index.html"><img src="img/home.png" alt="홈"></a>
+                    </li>
+                    <!-- // 메인페이지만 미노출 -->
+                    <li>
+                        <a href="cart.html">
+                            <img src="img/cart.png" alt="장바구니">
+                            <span>99</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 공통, 상단-->
+        </div>
+    
+        <div class="wrap_01 wrap_js">
+            <div class="content_center">
+                <div class="pointInfor_wp">
+                    <div class="myInfor">
+                            <div class="myInforCon">
+                                <p class="name">이름이매우긴경우 <span>님</span></p>
+                                <p class="point">보유 포인트 <span>800P</span></p>
+                            </div>
+                    </div>
+                    <div class="pointInfor">
+                        <dl>
+                            <dt>적립포인트</dt>
+                            <dd>100,000,000P</dd>
+                        </dl>
+                        <dl>
+                            <dt>사용포인트</dt>
+                            <dd>100,000,000P</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="content_bottom">
+            <ul class="tabs">
+                <li class="on" data-alt="tab01">적립</li>
+                <li data-alt="tab02">사용</li>
+            </ul>
+            <div class="tab_content">
+                <div class="pointList active" id="tab01">
+                    <ul>
+                        <li>
+                            2023.03.01 15:00
+                            <div><b>쇼핑 리워드</b>상품 구매 포인트 적립</div>
+                            <span>+133,300P</span>
+                        </li>
+                        <li>
+                            2023.03.01 15:00
+                            <div><b>쇼핑 리워드</b>상품 구매 포인트 적립 </div>
+                            <span>+13,300P</span>
+                        </li>
+                        <li>
+                            2023.03.01 15:00
+                            <div><b>쇼핑 리워드</b>상품 구매 포인트 적립</div>
+                            <span>+13,300P</span>
+                        </li>
+                        <li>
+                            2023.03.01 15:00
+                            <div><b>쇼핑 리워드</b>상품 구매 포인트 적립 </div>
+                            <span>+13,300P</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pointList" id="tab02">
+                    <ul>
+                        <li>
+                            2023.03.01 15:00
+                            <div><b>쇼핑 리워드</b>상품 구매 포인트 적립</div>
+                            <span>-13,300P</span>
+                        </li>
+                        <li>
+                            2023.03.01 15:00
+                            <div><b>쇼핑 리워드</b>상품 구매 포인트 적립 </div>
+                            <span>-13,300P</span>
+                        </li>
+                        <li>
+                            2023.03.01 15:00
+                            <div><b>쇼핑 리워드</b>상품 구매 포인트 적립</div>
+                            <span>-13,300P</span>
+                        </li>
+                        <li>
+                            2023.03.01 15:00
+                            <div><b>쇼핑 리워드</b>상품 구매 포인트 적립 </div>
+                            <span>-13,300P</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

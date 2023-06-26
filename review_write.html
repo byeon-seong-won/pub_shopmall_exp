@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리뷰작성하기</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <!-- <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper_style.css"> -->
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+   <!-- rating slider -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body class="reviewWr_body">
+    
+    <!-- 리뷰작성완료 버튼 -->
+    <!-- 완료 버튼 클릭시 전 메뉴 (리뷰작성 / 작성한 리뷰) 로 이동 -->
+    <div class="content_footer content_footer_gift review_foot" onclick="location.href='review.html'">
+        <h3>리뷰 작성 완료</h3>
+    </div>
+    <!--// 리뷰작성완료 버튼 -->
+
+
+    <div id="wrap">
+        <div class="wrap_01 wrap_js topBar" id="here_ind">
+            <!-- 공통, 상단-->
+            <div class="content_top">
+                <div class="content_top_div">
+                    <a href="#"><span class="xia xi-angle-left-thin"></span></a>
+                    <span>리뷰작성하기</span>
+                </div>
+                <ul class="content_top_ul">
+                    <li>
+                        <a href="search.html"><img src="img/search.png" alt="검색"></a>
+                    </li>
+                    <!-- 메인페이지만 미노출 -->
+                    <li>
+                        <a href="index.html"><img src="img/home.png" alt="홈"></a>
+                    </li>
+                    <!-- // 메인페이지만 미노출 -->
+                    <li>
+                        <a href="cart.html">
+                            <img src="img/cart.png" alt="장바구니">
+                            <span>99</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 공통, 상단-->
+        </div>
+
+        <div class="seco_wrap_01">
+             <div class="review_write">
+                 <div class="checkbox cart_select">     
+                     <div class="content_produ checkbox_span content_produ_revie">
+                         <img src="img/gift_pro.png" alt="썸네일" class="gift_pro gift_pro_revi">
+                         <div class="review_box">
+                             <h3>511BK/W경희  취커 취향존중 취향511BK/WT
+                                511BK/W경희  취커 취향존중 취향511BK/WT
+                                511BK/W경희  취커 취향존중 취향511BK/WT
+                             </h3> 
+                         </div>
+                     </div>
+                     <div class="star">
+                         <ul class="star_review">
+                             <li>
+                                 <img src="img/review_star_01.png" alt="평점">
+                                 <img src="img/review_star_01.png" alt="평점">
+                                 <img src="img/review_star_01.png" alt="평점">
+                                 <img src="img/review_star_01.png" alt="평점">
+                                 <img src="img/review_star_01.png" alt="평점">
+                             </li>
+                         </ul>
+                         <div class="input_tt">
+                             <textarea cols="30" rows="10" placeholder="다른 고객님에게 도움이 되도록 상품에 대한 솔직한 평가를 남겨주세요." onfocus="this.placeholder = ''"onblur="this.placeholder = '다른 고객님에게 도움이 되도록 상품에 대한 솔직한 평가를 남겨주세요.'"></textarea>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

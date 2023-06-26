@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>찜한 상품</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <!-- <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper_style.css"> -->
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+   <!-- rating slider -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body class="like_body">
+    
+
+    <!-- 1) 장바구니 담기 클릭시 노출 -->
+    <div class="content_footer content_footer_gift like_footer like_footer_add" style="display: none;">
+        <ul>
+            <li><span>장바구니</span>에 상품을 담았습니다.</li>
+            <li>
+                <a href="cart.html"><button>이동 ></button></a>
+            </li>
+        </ul>
+    </div>
+    <!-- //1) 장바구니 담기 클릭시 노출 -->
+
+    <!-- 2) 선택삭제 클릭시 노출 -->
+    <div class="content_footer content_footer_gift like_footer like_footer_del" style="display: none;">
+        <ul>
+            <li>
+                상품을 삭제했습니다.
+            </li>
+        </ul>
+    </div>
+    <!--// 2) 선택삭제 클릭시 -->
+
+
+    <div id="wrap">
+        <div class="wrap_01 wrap_js topBar" id="here_ind">
+            <!-- 공통, 상단-->
+            <div class="content_top">
+                <div class="content_top_div">
+                    <a href="#"><span class="xia xi-angle-left-thin"></span></a>
+                    <span>찜목록</span>
+                </div>
+                <ul class="content_top_ul">
+                    <li>
+                        <a href="search.html"><img src="img/search.png" alt="검색"></a>
+                    </li>
+                    <!-- 메인페이지만 미노출 -->
+                    <li>
+                        <a href="index.html"><img src="img/home.png" alt="홈"></a>
+                    </li>
+                    <!-- // 메인페이지만 미노출 -->
+                    <li>
+                        <a href="cart.html">
+                            <img src="img/cart.png" alt="장바구니">
+                            <span>99</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 공통, 상단-->
+        </div>
+   
+        <div class="wrap_01 wrap_js seco_wrap_01">
+            <div class="checkbox cart_select">
+                <input type="checkbox" id="like_ck" name="cart_chk">
+                <label for="like_ck" class="pro_chk_la">
+                    <span class="checkbox_span checkbox_span_tit">
+                        <span>전체선택(12/12)</span>
+                    </span>
+                </label>
+                <span class="click_del">선택삭제</span>
+    
+                <!-- 선택안하고 클릭시 -->
+                <div class="modal_del_wrap">    
+                    <div class="modal_del">
+                        <div class="modal-content_del">
+                            <div class="modal-body_del">
+                                <ul>
+                                    <li>상품을 선택해주세요.</li>
+                                    <li>
+                                        <button class="close_mo">확인</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //선택안하고 클릭시 -->
+            </div>
+    
+            <!-- 1) 찜한 상품이 있을 때 -->
+            <div>
+                <div class="cart_div">
+                    <div class="checkbox cart_select">
+                        <input type="checkbox" id="pro_chk1" name="pro_chk">
+                        <label for="pro_chk1" class="pro_chk_la"></label>
+                        <div class="content_produ checkbox_span">
+                            <a href="detail.html">
+                                <h3>한경희 취커 취향존중 취향511BK/ WT경희취커 취향존중 취향5 11BK/W
+                                    경희 취커 취향존중 취향511BK/W
+                                    경희 취커 취향존중 취향511BK/W
+                                    경희 취커 취향존중 취향511BK/W경희취커 취향존중 취향511BK/W
+                                </h3>
+                            </a>
+                            <div class="pro_cont">
+                                <div>
+                                    <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                                </div>
+                                <div>
+                                    <p class="option">옵션 : 기본옵션 <span>/</span> 수량 : 1개</p>
+                                    <p class="price">122,400원</p>
+                                    <ul class="mainVisual_detail_ul02">
+                                        <li class="cart_put">
+                                            <img src="img/cart_red.png" alt="장바구니담기">
+                                            <span>장바구니담기</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/btn_close.png" alt="btn_delete" class="btn_delete">
+                    </div>
+                    <div class="checkbox cart_select">
+                        <input type="checkbox" id="pro_chk2" name="pro_chk">
+                        <label for="pro_chk2" class="pro_chk_la"></label>
+                        <div class="content_produ checkbox_span">
+                            <a href="detail.html">
+                                <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                    경희  취커 취향존중 취향511BK/W
+                                    경희  취커 취향존중 취향511BK/W
+                                    경희  취커 취향존중 취향511BK/W경희취커 취향존중 취향511BK/W
+                                </h3>
+                            </a>
+                            <div class="pro_cont">
+                                <div>
+                                    <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                                </div>
+                                <div>
+                                    <p class="option">옵션 : 기본옵션 <span>/</span> 수량 : 1개</p>
+                                    <p class="price">122,400원</p>
+                                    <ul class="mainVisual_detail_ul02">
+                                        <li class="cart_put">
+                                            <img src="img/cart_red.png" alt="장바구니담기">
+                                            <span>장바구니담기</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/btn_close.png" alt="btn_delete" class="btn_delete">
+                    </div>
+                    <div class="checkbox cart_select">
+                        <input type="checkbox" id="pro_chk3" name="pro_chk">
+                        <label for="pro_chk3" class="pro_chk_la"></label>
+                        <div class="content_produ checkbox_span">
+                            <a href="detail.html">
+                                <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                    경희  취커 취향존중 취향511BK/W
+                                    경희  취커 취향존중 취향511BK/W
+                                    경희  취커 취향존중 취향511BK/W경희취커 취향존중 취향511BK/W
+                                </h3>
+                            </a>
+                            <div class="pro_cont">
+                                <div>
+                                    <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                                </div>
+                                <div>
+                                    <p class="option">옵션 : 기본옵션 <span>/</span> 수량 : 1개</p>
+                                    <p class="price">122,400원</p>
+                                    <ul class="mainVisual_detail_ul02">
+                                        <li class="cart_put">
+                                            <img src="img/cart_red.png" alt="장바구니담기">
+                                            <span>장바구니담기</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="img/btn_close.png" alt="btn_delete" class="btn_delete">
+                    </div>
+                </div>
+            </div>
+            <!-- // 찜한상품이 있을 때 -->
+    
+            
+            <!-- 2) 찜한상품이 없을 때 -->
+            <div style="display: none;">
+                <div class="wrap01 no_like">
+                    <div><img src="img/no_like.png" alt="상품없음"></div>
+                    <p>찜한 상품이 없습니다.</p>
+                </div>
+    
+                <div class="wrap02 no_like_seco">
+                    <h2>이런 상품 어떠세요?</h2>
+                    <ul class="thumb_product_search">
+                        <li>
+                            <div>
+                                <div>
+                                    <a href="detail.html">
+                                        <div class="thumb_02">
+                                            <p class="thumb_img_02"><img src="img/recent_pr_01.jpg" alt="최근상품"></p>
+                                            <dl class="thumb_infor_02">
+                                                <dt><p>아워홈     </p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <a href="detail.html">
+                                        <div class="thumb_02">
+                                            <p class="thumb_img_02"><img src="img/recent_pr_01.jpg" alt="최근상품"></p>
+                                            <dl class="thumb_infor_02">
+                                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <a href="detail.html">
+                                        <div class="thumb_02">
+                                            <p class="thumb_img_02"><img src="img/recent_pr_01.jpg" alt="최근상품"></p>
+                                            <dl class="thumb_infor_02">
+                                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <a href="detail.html">
+                                        <div class="thumb_02">
+                                            <p class="thumb_img_02"><img src="img/recent_pr_01.jpg" alt="최근상품"></p>
+                                            <dl class="thumb_infor_02">
+                                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <a href="detail.html">
+                                        <div class="thumb_02">
+                                            <p class="thumb_img_02"><img src="img/recent_pr_01.jpg" alt="최근상품"></p>
+                                            <dl class="thumb_infor_02">
+                                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <div>
+                                    <a href="detail.html">
+                                        <div class="thumb_02">
+                                            <p class="thumb_img_02"><img src="img/recent_pr_01.jpg" alt="최근상품"></p>
+                                            <dl class="thumb_infor_02">
+                                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                                            </dl>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

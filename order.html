@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문하기</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <!-- <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper_style.css"> -->
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+   <!-- rating slider -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body class="order-body">
+    
+
+    <!-- 하단 버튼 -->
+    <div class="content_footer content_footer_gift">
+        <h3>구매하기</h3>
+    </div>
+    <!--// 하단 버튼 -->
+
+    <div id="wrap">
+        <div class="wrap_01 wrap_js topBar" id="here_ind">
+            <!-- 공통, 상단-->
+            <div class="content_top">
+                <div class="content_top_div">
+                    <a href="#"><span class="xia xi-angle-left-thin"></span></a>
+                    <span>주문하기</span>
+                </div>
+                <ul class="content_top_ul">
+                    <li>
+                        <a href="search.html"><img src="img/search.png" alt="검색"></a>
+                    </li>
+                    <!-- 메인페이지만 미노출 -->
+                    <li>
+                        <a href="index.html"><img src="img/home.png" alt="홈"></a>
+                    </li>
+                    <!-- // 메인페이지만 미노출 -->
+                    <li>
+                        <a href="cart.html">
+                            <img src="img/cart.png" alt="장바구니">
+                            <span>99</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 공통, 상단-->
+        </div>
+
+        <div class="seco_wrap_01">
+            <div class="content_produ">
+                <img src="img/gift_pro.png" alt="썸네일" class="gift_pro">
+                <div>
+                    <h3>한경희 취향존중 캡슐커피 머신 ST-511BK/WT</h3>
+                    <p>옵션 : 없음 / 수량 : 1개</p>
+                </div>
+            </div>
+            <div class="content_produ">
+                <img src="img/gift_pro.png" alt="썸네일" class="gift_pro">
+                <div>
+                    <h3>한경희 취향존중 캡슐커 머신 ST-511BK 머신 ST-511 머신 ST-511 머신 ST-511/WT
+                        한경희 취향존중 캡슐커 머신 ST-511BK 머신 ST-511 머신 ST-511 머신 ST-511/WT
+                    </h3>
+                    <p>옵션 : 없음 / 수량 : 1개</p>
+                </div>
+            </div>
+            <div class="content_produ">
+                <img src="img/gift_pro.png" alt="썸네일" class="gift_pro">
+                <div>
+                    <h3>한경희 취향존중 캡슐커피 머신 ST-511BK/WT</h3>
+                    <p>옵션 : 없음 / 수량 : 1개</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="boder_bg"></div>
+
+        <div class="wrap_02">
+            <div>
+                <h1>주문자 정보</h1>
+                <div class="select_box">
+                    <p><span>*</span>이름 <span>(필수)</span></p>
+                    <input type="text" placeholder="이름을 입력하세요.">
+                </div>
+                <div class="select_box">
+                    <p><span>*</span>이메일 <span>(필수)</span></p>
+                    <input type="email" placeholder="이메일을 입력하세요.">
+                </div>
+                <div class="select_box">
+                    <p><span>*</span>연락처 <span>(필수)</span></p>
+                    <div class="tellBox">
+                        <input type="text" id="userTell" placeholder="연락처를 입력하세요.">
+                        <span>-</span>
+                        <input type="text">
+                        <span>-</span>
+                        <input type="text">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="boder_bg"></div>
+
+        <div class="wrap_02 deli_loc">
+            <div>
+                <div>
+                    <h1 class="deli_title">배송정보</h1>
+                    <!-- (1) 배송정보 default 화면 -->
+                    <div class="deli_loc_con deli_div_fir">
+                        <div class="content_bottom">
+                            <ul class="tabs">
+                                <li class="on radio_del" data-alt="deli01">
+                                    <div>
+                                        <input type="radio" id="radi_tit01" name="rd" checked>
+                                        <label for="radi_tit01">
+                                            <span class="radio_span">기본배송지</span>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li data-alt="deli02" class="radio_del">
+                                    <div>
+                                        <input type="radio" id="radi_tit02" name="rd">
+                                        <label for="radi_tit02">
+                                            <span class="radio_span">신규배송지</span>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        
+                            <div class="tab_content deli_tab_cont">
+                                <!-- 기본배송지 -->
+                                <div id="deli01" class="active">
+                                    <ul class="deli_ul">
+                                        <li>
+                                            <label for="radi2">
+                                                <div class="checkbox_span">
+                                                    <div>
+                                                        <h3>이준혁 [기본]</h3>
+                                                        <button class="deli_modi_btn">
+                                                            배송지변경
+                                                            <img src="img/deli_modi.png" alt="">
+                                                        </button>
+                                                    </div>
+                                                    <p>
+                                                        010.0000.0000
+                                                    </p>
+                                                    <p>
+                                                        <span>(03280)</span> 
+                                                        서울 서초구 서초중앙로22길 87 (서초동) 4층
+                                                        서울 서초구 서초중앙로22길 87 (서초동) 4층
+                                                        서울 서초구 서초중앙로22길 87 (서초동) 4층
+                                                    </p>
+                                                </div>
+                                            </label>
+                                            <input type="radio" id="radi2" name="chk">
+                                        </li>
+                                    </ul>
+                                
+                                    <div class="select_box select_box_order">
+                                        <select name="delivery" id="" class="select_box_sel">
+                                            <option value="delivery" selected>배송 요청 사항 선택</option>
+                                            <option value="delivery">배송 요청 사항 선택</option>
+                                            <option value="delivery">배송 요청 사항 선택</option> 
+                                            <option value="self">직접 입력</option>
+                                        </select>
+                                        <!-- 직접입력시에만 노출 -->
+                                        <input type="text" placeholder="직접입력" style="display: none;" class="self_text">
+                                        <!-- //직접입력시에만 노출 -->
+                                    </div>
+                                </div>
+                            
+                                <!-- 신규배송지 -->
+                                <div id="deli02">
+                                    <div class="select_box">
+                                        <p><span>*</span>수령인 <span>(필수)</span></p>
+                                        <input type="text" placeholder="이름을 입력하세요.">
+                                    </div>
+                                    <div class="select_box select_box_del select_box_deli">
+                                        <p><span>*</span>연락처 <span>(필수)</span></p>
+                                        <div class="tellBox">
+                                            <input type="text" id="userTell" placeholder="연락처를 입력하세요.">
+                                            <span>-</span>
+                                            <input type="text">
+                                            <span>-</span>
+                                            <input type="text">
+                                        </div>
+                                        <p class="seco_box_sel"><span>*</span>배송지 <span>(필수)</span></p>
+                                        <div class="select_box_flex">
+                                            <input type="text"><button class="numb">우편번호</button>
+                                        </div>
+                                        <input type="text">
+                                        <input type="text" placeholder="상세주소를 입력해주세요">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="chk2_del" name="chk2_del">
+                                            <label for="chk2_del">
+                                                <span class="checkbox_span">기본 배송지로 등록</span>
+                                            </label>
+                                        </div>
+                                        <div class="btn_sub">
+                                            <button class="submit">저장</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// (1) 배송정보 default 화면 -->
+
+
+                    <!-- (2) 배송지 변경 클릭시 노출 -->
+                    <div class="deli_loc_con deli_div_seco" style="display: none;">
+                        <ul>
+                            <li>배송지를 선택해 주세요.</li>
+                            <li class="deli_close"><img src="img/deli_close.png" alt="닫기"></li>
+                        </ul>
+
+                        <ul class="deli_ul deli_ul_seco">
+                            <!-- 해당 항목 선택시 (1)로 이동, 선택된 해당 항목들이 (1)에서 보여짐 -->
+                            <li class="on">
+                                <label for="radi2">
+                                    <div class="checkbox_span checkbox_span_radi2">
+                                        <div>
+                                            <h3>이준혁 [기본]</h3>
+                                            <button class="deli_select deli_select01">
+                                                <img src="img/checkaf.svg" alt="체크박스">
+                                                배송지 선택하기
+                                            </button>
+                                        </div>
+                                        <p>
+                                            010.0000.0000
+                                        </p>
+                                        <p>
+                                            <span>(03280)</span> 
+                                            서울 서초구 서초중앙로22길 87 (서초동) 4층
+                                            서울 서초구 서초중앙로22길 87 (서초동) 4층
+                                            서울 서초구 서초중앙로22길 87 (서초동) 4층
+                                        </p>
+                                        <div class="checkbox_span_button">
+                                            <button class="deli_modi_btn02">수정</button>
+                                            <button>삭제</button>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="radio" id="radi2" name="chk">
+                            </li>
+                            <li>
+                                <label for="radi2">
+                                    <div class="checkbox_span checkbox_span_radi2">
+                                        <div>
+                                            <h3>이준혁 [기본]</h3>
+                                            <button class="deli_select deli_select02">
+                                                <img src="img/checkbe.svg" alt="checkaf">
+                                                배송지 선택하기
+                                            </button>
+                                        </div>
+                                        <p>
+                                            010.0000.0000
+                                        </p>
+                                        <p>
+                                            <span>(03280)</span> 
+                                            서울 서초구 서초중앙로22길 87 (서초동) 4층
+                                            서울 서초구 서초중앙로22길 87 (서초동) 4층
+                                            서울 서초구 서초중앙로22길 87 (서초동) 4층
+                                        </p>
+                                        <div class="checkbox_span_button">
+                                            <button class="deli_modi_btn02">수정</button>
+                                            <button>삭제</button>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="radio" id="radi2" name="chk">
+                            </li>
+                        </ul>
+                    </div>
+                    <!--// (2) 배송지 변경 클릭시 노출 -->
+
+
+                    <!-- (3) 수정 클릭시 노출 -->
+                    <div class="deli_loc_con deli_div_thir" style="display: none;">
+                        <ul class="deli_div_thir_tit">
+                            <li>배송지를 수정해 주세요.</li>
+                            <li class="deli_close">
+                                <img src="img/deli_close.png" alt="닫기">
+                            </li>
+                        </ul>
+
+                        <div class="select_box">
+                            <p><span>*</span>수령인 <span>(필수)</span></p>
+                            <input type="text" placeholder="이름을 입력하세요.">
+                        </div>
+                        <div class="select_box select_box_del select_box_deli">
+                            <p><span>*</span>연락처 <span>(필수)</span></p>
+                            <div class="tellBox">
+                                <input type="text" id="userTell" placeholder="연락처를 입력하세요.">
+                                <span>-</span>
+                                <input type="text">
+                                <span>-</span>
+                                <input type="text">
+                            </div>
+                            <p><span>*</span>배송지 <span>(필수)</span></p>
+                            <div class="select_box_flex">
+                                <input type="text"><button class="numb">우편번호</button>
+                            </div>
+                            <input type="text">
+                            <input type="text" placeholder="상세주소를 입력해주세요">
+                            <div class="checkbox">
+                                <input type="checkbox" id="chk2_del" name="chk2_del">
+                                <label for="chk2_del">
+                                    <span class="checkbox_span">기본 배송지로 등록</span>
+                                </label>
+                            </div>
+                            <div class="btn_sub">
+                                <button class="submit">저장</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // (3) 수정 클릭시 노출 -->
+                </div>
+            </div>
+        </div>
+
+        <div class="boder_bg"></div>
+
+        <div class="wrap_02">
+            <div class="payType_point">
+                <h1>포인트 <span class="md_dot">&#183;</span>적립금 결제</h1>
+                <div class="content_bottom">
+                    <ul class="tabs">
+                        <li class="on radio_po" data-alt="ra01">
+                            <div class="radio_span_poi">
+                                <input type="radio" id="radi_poi01" name="rd_poi" checked>
+                                <label for="radi_poi01">
+                                    <span class="radio_span">휴가포인트</span>
+                                </label>
+                            </div>
+                        </li>
+                        <li data-alt="ra02" class="radio_po">
+                            <div class="radio_span_poi">
+                                <input type="radio" id="radi_poi02" name="rd_poi">
+                                <label for="radi_poi02">
+                                    <span class="radio_span">휴Shop적립금</span>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- (1) 포인트/적립금 결제 default 화면 -->
+                    <div class="tab_content payType_point_01">
+                        <div id="ra01" class="active">
+                            <div class="select_box">
+                                <div>
+                                    <input type="text" placeholder="아이디">
+                                    <input type="text" placeholder="비밀번호">
+                                </div>
+                                <button class="point_find">조회하기</button>
+                            </div>
+                        </div>
+                    
+                        <div id="ra02">
+                            <div class="select_box payType_point_01_2">
+                                <div>
+                                    <div class="polygon">
+                                        <img src="img/point_poly.png" alt="point_poly">
+                                    </div>
+
+                                    <div class="pointM_text">
+                                        보유 적립금은 <b>100,000</b> 입니다.
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="text">
+                                    <button class="point_use">모두사용</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // (1) 포인트/적립금 결제 default 화면 -->
+                </div>
+
+                <!-- (2) 휴가포인트 - 조회하기 클릭시 노출 -->
+                <div class="select_box payType_point_02" style="display: none;">
+                    <div>
+                        <div class="polygon">
+                            <img src="img/point_poly.png" alt="point_poly">
+                        </div>
+
+                        <div class="click_text">
+                            보유 포인트는 <b>100,000</b> 입니다.
+                        </div>
+                    </div>
+                    <div>
+                        <input type="text">
+                        <button class="point_use">모두사용</button>
+                    </div>
+                </div>
+                <!--// (2) 휴가포인트 - 조회하기 클릭시 노출 -->
+            </div>
+
+
+            <div class="payType">
+                <h1>결제수단</h1>
+                <ul class="payType_ul">
+                    <li class="on">
+                        <div>
+                            <svg viewBox="0 0 50 40" xmlns="http://www.w3.org/2000/svg" class="icon_pay icon_pay_on">
+                                <defs>
+                                    <style>
+                                        svg{width:48px;}
+                                        .icon_pay{fill:#666; stroke:#666;}
+                                        .icon_pay_on{fill:#51B6D2; stroke:#51B6D2;}
+                                    </style>
+                                </defs>
+                                <rect x="1.5" y="6.5" width="47.568" height="27"   fill="none" rx="1.5" />
+                                <line x1="1" y1="14.5" x2="48.634" y2="14.5"  stroke-width="3"/>
+                                <ellipse cx="8.00598" cy="27.3125" rx="1.401" ry="1.3125" />
+                                <ellipse cx="12.6759" cy="27.3125" rx="1.401" ry="1.3125"/>
+                            </svg>
+                            <img src="img/checkaf.svg" alt="checkaf" class="ck_display on">
+                        </div>
+                        <span>카드결제</span>
+                    </li>
+                    <li>
+                        <div>
+                            <svg viewBox="0 0 50 40" xmlns="http://www.w3.org/2000/svg"  class="icon_pay">
+                                <defs>
+                                    <style>
+                                        svg{width:48px;}
+                                        .icon_pay{fill:#666; stroke:#666;}
+                                        .icon_pay_on{fill:#51B6D2; stroke:#51B6D2;}
+                                    </style>
+                                </defs>
+                                <rect x="11.5" y="0.5" width="27.3314" height="39" rx="3.5"  fill="none"/>
+                                <line x1="12.0117" y1="32.5" x2="38.3194" y2="32.5"/>
+                                <ellipse cx="25.6716" cy="6.5" rx="1.51775" ry="1.5"/>
+                            </svg>
+                            <img src="img/checkaf.svg" alt="checkaf" class="ck_display">
+                        </div>
+                        <span>휴대폰결제</span>
+                    </li>
+                    <li>
+                        <div>
+                            <svg viewBox="0 0 50 40"  xmlns="http://www.w3.org/2000/svg" class="icon_pay">
+                                <defs>
+                                    <style>
+                                        svg{width:48px;}
+                                        .icon_pay{fill:#666; stroke:#666;}
+                                        .icon_pay_on{fill:#51B6D2; stroke:#51B6D2;}
+                                    </style>
+                                </defs>
+                                <path d="M8.71295 35.9425C8.47402 36.0357 8.25824 36.1199 8.07192 36.1924L8.59631 30.2061L8.59664 30.2027L8.59672 30.2018L8.59674 30.2016L8.59674 30.2015L8.59702 30.1985L8.62482 29.9019L8.37326 29.7368C4.08268 26.921 1.5 23.0515 1.5 18.8403C1.5 14.6843 4.01523 10.8614 8.20563 8.05496C12.3928 5.2507 18.2058 3.5 24.6516 3.5C31.0974 3.5 36.9105 5.2507 41.0976 8.05496C45.288 10.8614 47.8033 14.6843 47.8033 18.8403C47.8033 22.9964 45.288 26.8192 41.0976 29.6257C36.9105 32.43 31.0974 34.1807 24.6516 34.1807C21.7938 34.1807 19.0585 33.8364 16.5331 33.2078C16.4905 33.1927 16.4561 33.1866 16.4384 33.1838C16.3825 33.1748 16.3345 33.1757 16.3058 33.1772C16.2467 33.1803 16.1885 33.1907 16.1429 33.2001C16.0473 33.2199 15.9282 33.2527 15.7974 33.2922C15.5322 33.3724 15.1711 33.4952 14.752 33.6444C13.9115 33.9435 12.8108 34.3586 11.7175 34.7779C10.6235 35.1974 9.53324 35.6226 8.71295 35.9425Z "fill="none"/>
+                                <path d="M12.3157 14V23H10.8977V14H12.3157ZM16.2532 16.6602L13.4934 19.7188L11.9817 21.2656L11.6125 20.0703L12.7551 18.6582L14.5481 16.6602H16.2532ZM14.8528 23L12.7961 20.0234L13.6868 19.0332L16.4875 23H14.8528ZM20.7239 21.7285V18.7051C20.7239 18.4785 20.6829 18.2832 20.6008 18.1191C20.5188 17.9551 20.3938 17.8281 20.2258 17.7383C20.0618 17.6484 19.8547 17.6035 19.6047 17.6035C19.3743 17.6035 19.175 17.6426 19.0071 17.7207C18.8391 17.7988 18.7083 17.9043 18.6145 18.0371C18.5208 18.1699 18.4739 18.3203 18.4739 18.4883H17.0676C17.0676 18.2383 17.1282 17.9961 17.2493 17.7617C17.3704 17.5273 17.5461 17.3184 17.7766 17.1348C18.0071 16.9512 18.2825 16.8066 18.6028 16.7012C18.9231 16.5957 19.2825 16.543 19.6809 16.543C20.1575 16.543 20.5793 16.623 20.9465 16.7832C21.3176 16.9434 21.6086 17.1855 21.8196 17.5098C22.0344 17.8301 22.1418 18.2324 22.1418 18.7168V21.5352C22.1418 21.8242 22.1614 22.084 22.2004 22.3145C22.2434 22.541 22.304 22.7383 22.3821 22.9062V23H20.9348C20.8684 22.8477 20.8157 22.6543 20.7766 22.4199C20.7415 22.1816 20.7239 21.9512 20.7239 21.7285ZM20.929 19.1445L20.9407 20.0176H19.927C19.6653 20.0176 19.4348 20.043 19.2356 20.0938C19.0364 20.1406 18.8704 20.2109 18.7375 20.3047C18.6047 20.3984 18.5051 20.5117 18.4387 20.6445C18.3723 20.7773 18.3391 20.9277 18.3391 21.0957C18.3391 21.2637 18.3782 21.418 18.4563 21.5586C18.5344 21.6953 18.6477 21.8027 18.7961 21.8809C18.9485 21.959 19.1321 21.998 19.3469 21.998C19.636 21.998 19.8879 21.9395 20.1028 21.8223C20.3215 21.7012 20.4934 21.5547 20.6184 21.3828C20.7434 21.207 20.8098 21.041 20.8176 20.8848L21.2747 21.5117C21.2278 21.6719 21.1477 21.8438 21.0344 22.0273C20.9211 22.2109 20.7727 22.3867 20.5891 22.5547C20.4094 22.7188 20.1926 22.8535 19.9387 22.959C19.6887 23.0645 19.3997 23.1172 19.0715 23.1172C18.6575 23.1172 18.2883 23.0352 17.9641 22.8711C17.6399 22.7031 17.386 22.4785 17.2024 22.1973C17.0188 21.9121 16.927 21.5898 16.927 21.2305C16.927 20.8945 16.9895 20.5977 17.1145 20.3398C17.2434 20.0781 17.4309 19.8594 17.677 19.6836C17.927 19.5078 18.2317 19.375 18.5911 19.2852C18.9504 19.1914 19.3606 19.1445 19.8215 19.1445H20.929ZM25.0422 14V23H23.6243V14H25.0422ZM28.9797 16.6602L26.22 19.7188L24.7083 21.2656L24.3391 20.0703L25.4817 18.6582L27.2747 16.6602H28.9797ZM27.5793 23L25.5227 20.0234L26.4133 19.0332L29.2141 23H27.5793ZM33.4504 21.7285V18.7051C33.4504 18.4785 33.4094 18.2832 33.3274 18.1191C33.2454 17.9551 33.1204 17.8281 32.9524 17.7383C32.7883 17.6484 32.5813 17.6035 32.3313 17.6035C32.1008 17.6035 31.9016 17.6426 31.7336 17.7207C31.5657 17.7988 31.4348 17.9043 31.3411 18.0371C31.2473 18.1699 31.2004 18.3203 31.2004 18.4883H29.7942C29.7942 18.2383 29.8547 17.9961 29.9758 17.7617C30.0969 17.5273 30.2727 17.3184 30.5032 17.1348C30.7336 16.9512 31.009 16.8066 31.3293 16.7012C31.6497 16.5957 32.009 16.543 32.4075 16.543C32.884 16.543 33.3059 16.623 33.6731 16.7832C34.0442 16.9434 34.3352 17.1855 34.5461 17.5098C34.761 17.8301 34.8684 18.2324 34.8684 18.7168V21.5352C34.8684 21.8242 34.8879 22.084 34.927 22.3145C34.97 22.541 35.0305 22.7383 35.1086 22.9062V23H33.6614C33.595 22.8477 33.5422 22.6543 33.5032 22.4199C33.468 22.1816 33.4504 21.9512 33.4504 21.7285ZM33.6555 19.1445L33.6672 20.0176H32.6536C32.3918 20.0176 32.1614 20.043 31.9622 20.0938C31.7629 20.1406 31.5969 20.2109 31.4641 20.3047C31.3313 20.3984 31.2317 20.5117 31.1653 20.6445C31.0989 20.7773 31.0657 20.9277 31.0657 21.0957C31.0657 21.2637 31.1047 21.418 31.1829 21.5586C31.261 21.6953 31.3743 21.8027 31.5227 21.8809C31.675 21.959 31.8586 21.998 32.0735 21.998C32.3625 21.998 32.6145 21.9395 32.8293 21.8223C33.0481 21.7012 33.22 21.5547 33.345 21.3828C33.47 21.207 33.5364 21.041 33.5442 20.8848L34.0012 21.5117C33.9543 21.6719 33.8743 21.8438 33.761 22.0273C33.6477 22.2109 33.4993 22.3867 33.3157 22.5547C33.136 22.7188 32.9192 22.8535 32.6653 22.959C32.4153 23.0645 32.1262 23.1172 31.7981 23.1172C31.384 23.1172 31.0149 23.0352 30.6907 22.8711C30.3665 22.7031 30.1125 22.4785 29.929 22.1973C29.7454 21.9121 29.6536 21.5898 29.6536 21.2305C29.6536 20.8945 29.7161 20.5977 29.8411 20.3398C29.97 20.0781 30.1575 19.8594 30.4036 19.6836C30.6536 19.5078 30.9583 19.375 31.3176 19.2852C31.677 19.1914 32.0872 19.1445 32.5481 19.1445H33.6555ZM36.0754 19.9004V19.7656C36.0754 19.3086 36.1418 18.8848 36.2747 18.4941C36.4075 18.0996 36.5989 17.7578 36.8489 17.4688C37.1028 17.1758 37.4114 16.9492 37.7747 16.7891C38.1418 16.625 38.5559 16.543 39.0168 16.543C39.4817 16.543 39.8958 16.625 40.259 16.7891C40.6262 16.9492 40.9368 17.1758 41.1907 17.4688C41.4446 17.7578 41.6379 18.0996 41.7708 18.4941C41.9036 18.8848 41.97 19.3086 41.97 19.7656V19.9004C41.97 20.3574 41.9036 20.7812 41.7708 21.1719C41.6379 21.5625 41.4446 21.9043 41.1907 22.1973C40.9368 22.4863 40.6282 22.7129 40.2649 22.877C39.9016 23.0371 39.4895 23.1172 39.0286 23.1172C38.5637 23.1172 38.1477 23.0371 37.7805 22.877C37.4172 22.7129 37.1086 22.4863 36.8547 22.1973C36.6008 21.9043 36.4075 21.5625 36.2747 21.1719C36.1418 20.7812 36.0754 20.3574 36.0754 19.9004ZM37.4875 19.7656V19.9004C37.4875 20.1855 37.5168 20.4551 37.5754 20.709C37.634 20.9629 37.7258 21.1855 37.8508 21.377C37.9758 21.5684 38.136 21.7188 38.3313 21.8281C38.5266 21.9375 38.759 21.9922 39.0286 21.9922C39.2903 21.9922 39.5168 21.9375 39.7083 21.8281C39.9036 21.7188 40.0637 21.5684 40.1887 21.377C40.3137 21.1855 40.4055 20.9629 40.4641 20.709C40.5266 20.4551 40.5579 20.1855 40.5579 19.9004V19.7656C40.5579 19.4844 40.5266 19.2188 40.4641 18.9688C40.4055 18.7148 40.3118 18.4902 40.1829 18.2949C40.0579 18.0996 39.8977 17.9473 39.7024 17.8379C39.511 17.7246 39.2825 17.668 39.0168 17.668C38.7512 17.668 38.5208 17.7246 38.3254 17.8379C38.134 17.9473 37.9758 18.0996 37.8508 18.2949C37.7258 18.4902 37.634 18.7148 37.5754 18.9688C37.5168 19.2188 37.4875 19.4844 37.4875 19.7656Z" stroke="none" />
+                            </svg>
+                            <img src="img/checkaf.svg" alt="checkaf" class="ck_display">
+                        </div>
+                        <span>카카오페이</span>
+                    </li>
+                    <li>
+                        <div>
+                            <svg viewBox="0 0 50 40" xmlns="http://www.w3.org/2000/svg" class="icon_pay">
+                                <defs>
+                                    <style>
+                                        svg{width:48px;}
+                                        .icon_pay{fill:#666; stroke:#666;}
+                                        .icon_pay_on{fill:#51B6D2; stroke:#51B6D2;}
+                                    </style>
+                                </defs>
+                                <rect x="9.5" y="4.5" width="31.3787" height="31" rx="3.5"  fill="none"/>
+                                <path d="M29.4157 14.625V26H28.447L21.9079 16.2812V26H20.947V14.625H21.9079L28.4626 24.3438V14.625H29.4157Z"  stroke="none"/>
+                            </svg>
+                            <img src="img/checkaf.svg" alt="checkaf" class="ck_display">
+                        </div>
+                        <span>네이버페이</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="boder_bg"></div>
+
+        <div class="wrap_02">
+            <div class="select_box select_box_cou">
+                <div class="select_box_flex">
+                    <input type="text" placeholder="쿠폰을 선택해주세요.">
+                    <button type="submit" class="useBtn">사용</button>
+                </div>
+            </div>
+
+            <div class="money">
+                <ul>
+                    <li>상품가격</li>
+                    <li>210,000원</li>
+                </ul>
+                <ul>
+                    <li>배송비</li>
+                    <li>0원</li>
+                </ul>
+                <ul class="money_blue">
+                    <li>포인트사용</li>
+                    <li>-12,140P</li>
+                </ul>
+                <ul class="money_blue">
+                    <li>쿠폰</li>
+                    <li>-12,140P</li>
+                </ul>
+            </div>
+            <ul class="totalMoney">
+                <li>최종 결제금액</li>
+                <li>197,860<span>원</span></li>
+            </ul>
+            <div class="money_seco">
+                <ul>
+                    <li>포인트 적립</li>
+                    <li>+1,978P</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="boder_bg"></div>
+
+        <div class="wrap_02 order_agree">
+            <div class="checkbox">
+                <input type="checkbox" id="chk3" name="chk">
+                <label for="chk3">
+                    <span class="checkbox_span">주문 내용 확인 및 동의</span>
+                </label>    
+
+            </div>
+            <p>주문 상품의 상세 정보, 가격, 배송정보 등을 확인 하였으며, 구매에 동의 합니다.
+                <br>(전자상거래법 제8조 제2항)
+            </p>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

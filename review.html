@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리뷰작성하기</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <!-- <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper_style.css"> -->
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+   <!-- rating slider -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body class="review_body">
+    
+
+    <div id="wrap" class="review_cont">
+        <div class="wrap_01 wrap_js topBar" id="here_ind">
+            <!-- 공통, 상단-->
+            <div class="content_top">
+                <div class="content_top_div">
+                    <a href="#"><span class="xia xi-angle-left-thin"></span></a>
+                    <span>리뷰</span>
+                </div>
+                <ul class="content_top_ul">
+                    <li>
+                        <a href="search.html"><img src="img/search.png" alt="검색"></a>
+                    </li>
+                    <!-- 메인페이지만 미노출 -->
+                    <li>
+                        <a href="index.html"><img src="img/home.png" alt="홈"></a>
+                    </li>
+                    <!-- // 메인페이지만 미노출 -->
+                    <li>
+                        <a href="cart.html">
+                            <img src="img/cart.png" alt="장바구니">
+                            <span>99</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 공통, 상단-->
+        </div>
+   
+        <div class="seco_wrap_01">
+            <div class="content_bottom">
+                <ul class="tabs">
+                    <li class="on" data-alt="tab01">리뷰작성 (30) </li>
+                    <li data-alt="tab02">작성한 리뷰 (50)</li>
+                </ul>
+    
+                <div class="tab_content review_content">
+                    <div class="pointList active" id="tab01">
+                        <!--  리뷰작성 default 화면 -->
+                        <div class="review_01">
+                            <div class="checkbox cart_select">     
+                                <div class="content_produ checkbox_span">
+                                    <a href="detail.html">
+                                        <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W경희취커 취향존중 취향511BK/W
+                                        </h3>
+                                    </a>
+                                    <div class="pro_cont">
+                                        <div>
+                                            <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                                        </div>
+                                        <div>
+                                            <p class="option">옵션 : 없음 <span>/</span> 수량 : 1개</p>
+                                            <p class="option" style="padding-top:4px;">배송완료일 : 2023.02.02</p>
+                                            <ul class="mainVisual_detail_ul02">
+                                                <li>
+                                                    <img src="img/review.png" alt="리뷰작성">
+                                                    <span class="onclick_review" onclick="location.href='review_write.html'">리뷰 작성하기</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content_produ checkbox_span">
+                                    <a href="detail.html">
+                                        <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W경희취커 취향존중 취향511BK/W
+                                        </h3>
+                                    </a>
+                                    <div class="pro_cont">
+                                        <div>
+                                            <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                                        </div>
+                                        <div>
+                                            <p class="option">옵션 : 없음 <span>/</span> 수량 : 1개</p>
+                                            <p class="option" style="padding-top:4px;">배송완료일 : 2023.02.02</p>
+                                            <ul class="mainVisual_detail_ul02">
+                                                <li>
+                                                    <img src="img/review.png" alt="리뷰작성">
+                                                    <span class="onclick_review" onclick="location.href='review_write.html'">리뷰 작성하기</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content_produ checkbox_span">
+                                    <a href="detail.html">
+                                        <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W경희취커 취향존중 취향511BK/W
+                                        </h3>
+                                    </a>
+                                    <div class="pro_cont">
+                                        <div>
+                                            <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                                        </div>
+                                        <div>
+                                            <p class="option">옵션 : 없음 <span>/</span> 수량 : 1개</p>
+                                            <p class="option" style="padding-top:4px;">배송완료일 : 2023.02.02</p>
+                                            <ul class="mainVisual_detail_ul02">
+                                                <li>
+                                                    <img src="img/review.png" alt="리뷰작성">
+                                                    <span class="onclick_review" onclick="location.href='review_write.html'">리뷰 작성하기</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content_produ checkbox_span">
+                                    <a href="detail.html">
+                                        <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W경희취커 취향존중 취향511BK/W
+                                        </h3>
+                                    </a>
+                                    <div class="pro_cont">
+                                        <div>
+                                            <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                                        </div>
+                                        <div>
+                                            <p class="option">옵션 : 없음 <span>/</span> 수량 : 1개</p>
+                                            <p class="option" style="padding-top:4px;">배송완료일 : 2023.02.02</p>
+                                            <ul class="mainVisual_detail_ul02">
+                                                <li>
+                                                    <img src="img/review.png" alt="리뷰작성">
+                                                    <span class="onclick_review" onclick="location.href='review_write.html'">리뷰 작성하기</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //리뷰작성 default 화면 -->
+                    </div>
+    
+                    <div class="pointList mo_pointList" id="tab02">
+                        <!-- 작성한 리뷰 default 화면 -->
+                        <div class="review_ch_01">
+                            <div class="checkbox cart_select review_alr">
+                                <div class="content_produ checkbox_span">
+                                    <a href="detail.html">
+                                        <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W경희취커 취향존중 취향511BK/W
+                                        </h3>
+                                    </a>
+                                    <div class="pro_cont">
+                                        <div>
+                                            <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                                        </div>
+                                        <div>
+                                            <p class="option">옵션 : 없음 <span>/</span> 수량 : 1개</p>
+                                            <ul class="star_review_fir">
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                            </ul>
+                                            <ul class="mainVisual_detail_ul02">
+                                                <li class="onclick_ch"> 
+                                                    <img src="img/review.png" alt="수정하기">
+                                                    <span class="onclick_ch" onclick="location.href='review_write.html'">수정하기</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content_produ checkbox_span">
+                                    <a href="detail.html">
+                                        <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W경희취커 취향존중 취향511BK/W
+                                        </h3>
+                                    </a>
+                                    <div class="pro_cont">
+                                        <div>
+                                            <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                                        </div>
+                                        <div>
+                                            <p class="option">옵션 : 없음 <span>/</span> 수량 : 1개</p>
+                                            <ul class="star_review_fir">
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                            </ul>
+                                            <ul class="mainVisual_detail_ul02">
+                                                <li class="onclick_ch"> 
+                                                    <img src="img/review.png" alt="수정하기">
+                                                    <span class="onclick_ch" onclick="location.href='review_write.html'">수정하기</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content_produ checkbox_span">
+                                    <a href="detail.html">
+                                        <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W경희취커 취향존중 취향511BK/W
+                                        </h3>
+                                    </a>
+                                    <div class="pro_cont">
+                                        <div>
+                                            <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                                        </div>
+                                        <div>
+                                            <p class="option">옵션 : 없음 <span>/</span> 수량 : 1개</p>
+                                            <ul class="star_review_fir">
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                            </ul>
+                                            <ul class="mainVisual_detail_ul02">
+                                                <li class="onclick_ch"> 
+                                                    <img src="img/review.png" alt="수정하기">
+                                                    <span class="onclick_ch" onclick="location.href='review_write.html'">수정하기</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content_produ checkbox_span">
+                                    <a href="detail.html">
+                                        <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W
+                                            경희  취커 취향존중 취향511BK/W경희취커 취향존중 취향511BK/W
+                                        </h3>
+                                    </a>
+                                    <div class="pro_cont">
+                                        <div>
+                                            <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                                        </div>
+                                        <div>
+                                            <p class="option">옵션 : 없음 <span>/</span> 수량 : 1개</p>
+                                            <ul class="star_review_fir">
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                                <li><img src="img/star_tr.png" alt="평점"></li>
+                                            </ul>
+                                            <ul class="mainVisual_detail_ul02">
+                                                <li class="onclick_ch"> 
+                                                    <img src="img/review.png" alt="수정하기">
+                                                    <span class="onclick_ch" onclick="location.href='review_write.html'">수정하기</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- //작성한 리뷰 default 화면 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>

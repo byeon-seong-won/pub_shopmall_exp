@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더줌플러스</title>
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <!-- <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper_style.css"> -->
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/swiper.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+</head>
+<body class="ind02_body">
+
+
+
+
+
+    <!-- 하단 바 -->
+    <div class="bottom_menu">
+        <ul>
+            <li class="menuClick">
+                <img src="img/idn_menu.png" alt="전체메뉴">
+                <span>전체메뉴</span>
+            </li>
+            <li class="click_type">
+                <img src="img/idn_main.png" alt="메인화면설정">
+                <span>메인화면설정</span>
+            </li>
+            <li onClick="location.href='like.html'">
+                <img src="img/idn_like.png" alt="찜리스트">
+                <span>찜리스트</span>
+            </li>
+            <li onClick="location.href='mypage.html'">
+                <img src="img/idn_myp.png" alt="마이페이지">
+                <span>마이페이지</span>
+            </li>
+        </ul>
+    </div>
+    <!-- //하단 바 -->
+
+
+    <!-- 전체메뉴 클릭시 -->
+    <div class="menuModal">
+        <div class="menuModal-content">
+            <div class="content_top">
+                <div class="content_top_div">
+                    <h1><img src="img/logo.png" alt="로고"></h1>
+                </div>
+                <span class="btn-close-menu menuClick">
+                    <img src="img/btn_close.png" alt="닫기">
+                </span>
+            </div>
+            <div class="modal_menu_body">
+                <div class="menu">   
+                    <h2>
+                        <img src="img/menu_camping.png">
+                        <span>캠핑</span>
+                    </h2>
+                    <ul>
+                        <li><a href="category.html">타프/그늘막</a></li>
+                        <li><a href="category.html">체어/테이블</a></li>
+                        <li><a href="category.html">매트/침낭</a></li>
+                        <li><a href="category.html">캠핑용품</a></li>
+                        <li><a href="category.html">취사용품</a></li>
+                        <li><a href="category.html">텐트</a></li>
+                    </ul>
+                </div> 
+                <div class="menu">   
+                    <h2><img src="img/menu_fishing.png"><span>낚시</span></h2>
+                    <ul>
+                        <li><a href="category.html">낚시대</a></li>
+                        <li><a href="category.html">릴</a></li>
+                        <li><a href="category.html">의류/잡화</a></li>
+                    </ul>
+                </div> 
+                <div class="menu">   
+                    <h2><img src="img/menu_climbing.png"><span>등산</span></h2>
+                    <ul>
+                        <li><a href="category.html">등산화</a></li>
+                        <li><a href="category.html">등산용품</a></li>
+                    </ul>
+                </div> 
+                <div class="menu">   
+                    <h2><img src="img/menu_swimming.png"><span>물놀이</span></h2>
+                    <ul>
+                        <li><a href="category.html">물놀이용품</a></li>
+                        <li><a href="category.html">수영복</a></li>
+                    </ul>
+                </div> 
+                <div class="menu">   
+                    <h2><img src="img/menu_bicycle.png"><span>자전거</span></h2>
+                    <ul>
+                        <li><a href="category.html">자전거</a></li>
+                        <li><a href="category.html">자전거의류/용품</a></li>
+                    </ul>
+                </div> 
+                <div class="menu">   
+                    <h2><img src="img/menu_ski.png"><span>스키/보드</span></h2>
+                    <ul>
+                        <li><a href="category.html">보드장비</a></li>
+                        <li><a href="category.html">스키/보드/의류</a></li>
+                        <li><a href="category.html">용품(헬멧/장갑/고글 외)</a></li>
+                    </ul>
+                </div> 
+                <div class="menu">   
+                    <h2><img src="img/menu_travel.png"><span>여행/레저입장권</span></h2>
+                    <ul>
+                        <li><a href="category.html">호텔/리조트</a></li>
+                        <li><a href="category.html">글램핑/카라반</a></li>
+                    </ul>
+                </div> 
+                <div class="menu">   
+                    <h2 onClick="location.href='category.html'"><img src="img/menu_sale.png"><span>아찔특가</span></h2>
+                </div> 
+                <div class="menu">   
+                    <h2 onClick="location.href='category.html'"><img src="img/menu_best.png"><span>베스트 Item</span></h2>
+                </div> 
+                <div class="menu">   
+                    <h2 onClick="location.href='category.html'"><img src="img/menu_event.png"><span>이벤트</span></h2>
+                </div> 
+                <div class="menu">   
+                    <h2 onClick="location.href='category.html'"><img src="img/menu_coupon.png"><span>쿠폰 기획전</span></h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //전체메뉴 클릭시 -->
+
+    <!-- 홈 타입 클릭시 -->
+    <div class="modal_home_wrap">    
+        <div class="modal_home">
+            <div class="modal-content_home">
+                <div class="modal-body_home">
+                    <h2>메인화면 타입을<br />선택해주세요.</h2>
+                    <img src="img/btn_close2.png" class="modal_close" alt="닫기">
+                    <div onClick="location.href='index.html'">
+                        <input type="radio" id="index_rad01">
+                        <label for="index_rad01">이벤트 위주로 볼래요!<br>
+                            <span>기획전 타입</span>
+                        </label>
+                    </div>
+                    <div onClick="location.href='index_v2.html'">
+                        <input type="radio" id="index_rad02" checked>
+                        <label for="index_rad02">상품 위주로 볼래요!<br>
+                            <span>배너 타입</span>
+                        </label>
+                    </div>
+                    <div onClick="location.href='index_v3.html'">
+                        <input type="radio" id="index_rad03">
+                        <label for="index_rad03">이벤트+상품을 함께에 볼래요!<br>
+                            <span>종합몰 타입</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- // 홈 타입 클릭시 -->
+
+
+
+
+
+    <div class="content_bottom_index">
+        <ul class="tabs_index">
+            <li class="on" data-alt="tab01">타임딜</li>
+            <li data-alt="tab02">식품</li>
+            <li data-alt="tab03">주방/생활/취미</li>
+            <li data-alt="tab04">디지털/가전</li>
+            <li data-alt="tab05">주방/생활/취미</li>
+            <li data-alt="tab06">디지털/가전</li>
+            <li data-alt="tab07">디지털/가전</li>
+            <li data-alt="tab08">주방/생활/취미</li>
+            <li data-alt="tab09">디지털/가전</li>
+            <li data-alt="tab010">디지털/가전</li>
+            <li data-alt="tab011">주방/생활/취미</li>
+            <li data-alt="tab012">디지털/가전</li>
+        </ul>
+    </div>
+
+     
+
+
+    <div id="wrap">
+        <div class="wrap_01 wrap_js topBar" id="here_ind">
+            <!-- 공통, 상단-->
+            <div class="content_top">
+                <div class="content_top_div">
+                    <h1><img src="img/logo.png" alt="로고"></h1>
+                </div>
+                <ul class="content_top_ul">
+                    <li>
+                        <a href="search.html"><img src="img/search.png" alt="검색"></a>
+                    </li>
+                    <!-- <li>
+                        <a href="index.html"><img src="img/home.png" alt="홈"></a>
+                    </li> -->
+                    <li>
+                        <a href="cart.html">
+                            <img src="img/cart.png" alt="장바구니">
+                            <span>99</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 공통, 상단-->
+        </div>
+
+        <div class="seco_wrap_01">
+            <div class="thumb_product_03">
+                <div>
+                    <a href="detail.html">
+                        <div class="thumb_02">
+                            <p class="thumb_img_02"><img src="img/index_thumb.png" alt="index_thumb"></p>
+                            <dl class="thumb_infor_02">
+                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="detail.html">
+                        <div class="thumb_02">
+                            <p class="thumb_img_02"><img src="img/index_thumb.png" alt="index_thumb"></p>
+                            <dl class="thumb_infor_02">
+                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="detail.html">
+                        <div class="thumb_02">
+                            <p class="thumb_img_02"><img src="img/index_thumb.png" alt="index_thumb"></p>
+                            <dl class="thumb_infor_02">
+                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="thumb_product_02 ind02">
+                <div>
+                    <a href="detail.html">
+                        <div class="thumb_02">
+                            <p class="thumb_img_02"><img src="img/thumb_02.png" alt="index_thumb"></p>
+                            <dl class="thumb_infor_02">
+                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="detail.html">
+                        <div class="thumb_02">
+                            <p class="thumb_img_02"><img src="img/thumb_02.png" alt="index_thumb"></p>
+                            <dl class="thumb_infor_02">
+                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="detail.html">
+                        <div class="thumb_02">
+                            <p class="thumb_img_02"><img src="img/thumb_02.png" alt="index_thumb"></p>
+                            <dl class="thumb_infor_02">
+                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="detail.html">
+                        <div class="thumb_02">
+                            <p class="thumb_img_02"><img src="img/thumb_02.png" alt="index_thumb"></p>
+                            <dl class="thumb_infor_02">
+                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="detail.html">
+                        <div class="thumb_02">
+                            <p class="thumb_img_02"><img src="img/thumb_02.png" alt="index_thumb"></p>
+                            <dl class="thumb_infor_02">
+                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a href="detail.html">
+                        <div class="thumb_02">
+                            <p class="thumb_img_02"><img src="img/thumb_02.png" alt="index_thumb"></p>
+                            <dl class="thumb_infor_02">
+                                <dt><p>아워홈</p>한경희 취향존중 캠슐커피 머신 ST-511BK/WT</dt>
+                                <dd><p>30,000원</p> 30% <b>29,900</b><span>원</span></dd>
+                                <dd><span><span class="icon_p">P</span> 포인트적립 1,590</span></dd>
+                            </dl>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="boder_bg"></div>
+    </div>
+
+    
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
+
+<script>
+    $(function () {
+            var swiper_ind02 = new Swiper('.content_bottom_ind02', {
+                loop: true,
+                autoplay: false,
+                speed:1500,
+                grabCursor: true,
+                effect: 'slide',
+            });
+        })
+</script>
+
+
+
+</body>
+
+</html>

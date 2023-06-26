@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠폰함</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <!-- <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper_style.css"> -->
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+   <!-- rating slider -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body class="coupon">
+    
+    <div id="wrap">
+        <div class="wrap_01 wrap_js topBar" id="here_ind">
+            <!-- 공통, 상단-->
+            <div class="content_top">
+                <div class="content_top_div">
+                    <a href="#"><span class="xia xi-angle-left-thin"></span></a>
+                    <span>쿠폰함</span>
+                </div>
+                <ul class="content_top_ul">
+                    <li>
+                        <a href="search.html"><img src="img/search.png" alt="검색"></a>
+                    </li>
+                    <!-- 메인페이지만 미노출 -->
+                    <li>
+                        <a href="index.html"><img src="img/home.png" alt="홈"></a>
+                    </li>
+                    <!-- // 메인페이지만 미노출 -->
+                    <li>
+                        <a href="cart.html">
+                            <img src="img/cart.png" alt="장바구니">
+                            <span>99</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 공통, 상단-->
+        </div>
+
+        <div class="wrap_01 wrap_js">
+                <!-- tablet -->
+                <div class="tablet">
+                    <div class="select_box select_box_cou">
+                        <div class="select_box_flex">
+                            <input type="text" placeholder="쿠폰을 선택해주세요.">
+                            <button type="submit" class="useBtn ta_cou">등록</button>
+                        </div>
+                    </div>
+        
+                    <div class="content_bottom_cou ta_cou_div">
+                        <ul class="tabs">
+                            <li class="on" data-alt="tab01">보유한 쿠폰</li>
+                            <li data-alt="tab02">사용한 쿠폰</li>
+                        </ul>
+            
+                        <div class="tab_content tab_content_coupon tab_content_ta">
+                            <div class="detail active" id="tab01">
+    
+                                <!-- 보유쿠폰 없을 때 -->
+                                <div class="nocou" style="display: none;">
+                                    <p>보유 쿠폰 <span>0장</span></p>
+                                    <div>
+                                        <img src="img/nocou.png" alt="nocoupon">
+                                        <p>쿠폰이 없습니다.</p>
+                                    </div>
+                                </div>
+                                <!-- //보유쿠폰 없을 때 -->
+     
+                                <!-- 보유쿠폰 있을 때 -->
+                                <div>
+                                    <p>보유 쿠폰 <span>2장</span></p>
+                                    <div class="couponImg">
+                                        <div class="img_text_ab">
+                                            <img src="img/coupon_own.png" alt="couponImg">
+                                            <ul>
+                                                <li>1만원 이상 구매 시 할인</li>
+                                                <li>10,000</li>
+                                                <li>사용기간 : ~ 2023.04.28 까지</li>
+                                            </ul>
+                                            <ul>
+                                                사용가능
+                                            </ul>
+                                        </div>
+                                        <div class="img_text_ab">
+                                            <img src="img/coupon_own.png" alt="couponImg">
+                                            <ul>
+                                                <li>1만원 이상 구매 시 할인</li>
+                                                <li>10,000</li>
+                                                <li>사용기간 : ~ 2023.04.28 까지</li>
+                                            </ul>
+                                            <ul>
+                                                사용가능
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="cou_notify">
+                                        <p>쿠폰 이용 안내</p>
+                                        <p>- 쿠폰은 중복 할인이 불가하며, 1회 사용 시 소멸됩니다.</p>
+                                        <p>- 상품 수령 후 구매 취소 시 사용된 쿠폰은 재발행 되지 않습니다.</p> 
+                                    </div>
+                                </div>
+                                <!-- ///보유쿠폰 있을 때 -->
+                            </div>
+            
+                            <div class="detail" id="tab02">
+                                <!-- 보유쿠폰 없을 때 -->
+                                <div class="nocou" style="display: none;">
+                                    <p>보유 쿠폰 <span>0장</span></p>
+                                    <div>
+                                        <img src="img/nocou.png" alt="nocoupon">
+                                        <p>쿠폰이 없습니다.</p>
+                                    </div>
+                                </div>
+                                <!-- //보유쿠폰 없을 때 -->
+                                <div>
+                                    <p>사용한 쿠폰 <span>100장</span></p>
+                                    <div class="couponImg">
+                                        <div class="img_text_ab">
+                                            <img src="img/coupon_use.png" alt="couponImg">
+                                            <ul>
+                                                <li>1만원 이상 구매 시 할인</li>
+                                                <li>10,000</li>
+                                                <li>사용기간 : ~ 2023.04.28 까지</li>
+                                            </ul>
+                                            <ul>
+                                                사용완료
+                                            </ul>
+                                        </div>
+                                        <div class="img_text_ab">
+                                            <img src="img/coupon_use.png" alt="couponImg">
+                                            <ul>
+                                                <li>1만원 이상 구매 시 할인</li>
+                                                <li>10,000</li>
+                                                <li>사용기간 : ~ 2023.04.28 까지</li>
+                                            </ul>
+                                            <ul>
+                                                사용완료
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="cou_notify">
+                                        <p>쿠폰 이용 안내</p>
+                                        <p>- 쿠폰은 중복 할인이 불가하며, 1회 사용 시 소멸됩니다.</p>
+                                        <p>- 상품 수령 후 구매 취소 시 사용된 쿠폰은 재발행 되지 않습니다.</p> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //tablet -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+   
+</html>    

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주문내역</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <!-- <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/swiper_style.css"> -->
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+   <!-- rating slider -->
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+</head>
+<body class="orderL_body">
+    
+    <div id="wrap">
+        <div class="wrap_01 wrap_js topBar" id="here_ind">
+            <!-- 공통, 상단-->
+            <div class="content_top">
+                <div class="content_top_div">
+                    <a href="#"><span class="xia xi-angle-left-thin"></span></a>
+                    <span>주문목록</span>
+                </div>
+                <ul class="content_top_ul">
+                    <li>
+                        <a href="search.html"><img src="img/search.png" alt="검색"></a>
+                    </li>
+                    <!-- 메인페이지만 미노출 -->
+                    <li>
+                        <a href="index.html"><img src="img/home.png" alt="홈"></a>
+                    </li>
+                    <!-- // 메인페이지만 미노출 -->
+                    <li>
+                        <a href="cart.html">
+                            <img src="img/cart.png" alt="장바구니">
+                            <span>99</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // 공통, 상단-->
+        </div>
+
+        <div class="seco_wrap_01">
+            <div class="order_list">
+                <div>
+                    <h1 class="orderList_h1">배송중</h1>
+                    <ul class="mainVisual_detail_ul02">
+                        <li class="delivery active">
+                            <img src="img/delivery.png" alt="배송조회">
+                            <span onclick="location.href='#'">배송조회</span>
+                        </li>
+                    </ul>
+                    <div class="pro_cont">
+                        <div>
+                            <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                        </div>
+                        <div class="tit_wrap">
+                            <a href="detail.html">
+                                <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                </h3>
+                            </a>
+                            <p class="option">옵션 : 기본옵션 <span>/</span> 수량 : 1개</p>
+                            <p class="price">122,400원</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="orderList_h1">결제완료</h1>
+                    <ul class="mainVisual_detail_ul02">
+                        <li class="delivery">
+                            <img src="img/delivery.png" alt="배송조회">
+                            <span onclick="location.href='#'">배송조회</span>
+                        </li>
+                    </ul>
+                    <div class="pro_cont">
+                        <div>
+                            <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                        </div>
+                        <div class="tit_wrap">
+                            <a href="detail.html">
+                                <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                </h3>
+                            </a>
+                            <p class="option">옵션 : 기본옵션 <span>/</span> 수량 : 1개</p>
+                            <p class="price">122,400원</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="orderList_h1">배송완료</h1>
+                    <ul class="mainVisual_detail_ul02">
+                        <li class="delivery">
+                            <img src="img/delivery.png" alt="배송조회">
+                            <span onclick="location.href='#'">배송조회</span>
+                        </li>
+                    </ul>
+                    <div class="pro_cont">
+                        <div>
+                            <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                        </div>
+                        <div class="tit_wrap">
+                            <a href="detail.html">
+                                <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                </h3>
+                            </a>
+                            <p class="option">옵션 : 기본옵션 <span>/</span> 수량 : 1개</p>
+                            <p class="price">122,400원</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="orderList_h1">배송준비중</h1>
+                    <ul class="mainVisual_detail_ul02">
+                        <li class="delivery">
+                            <img src="img/delivery.png" alt="배송조회">
+                            <span onclick="location.href='#'">배송조회</span>
+                        </li>
+                    </ul>
+                    <div class="pro_cont">
+                        <div>
+                            <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                        </div>
+                        <div class="tit_wrap">
+                            <a href="detail.html">
+                                <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                </h3>
+                            </a>
+                            <p class="option">옵션 : 기본옵션 <span>/</span> 수량 : 1개</p>
+                            <p class="price">122,400원</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="orderList_h1">배송완료</h1>
+                    <ul class="mainVisual_detail_ul02">
+                        <li class="delivery">
+                            <img src="img/delivery.png" alt="배송조회">
+                            <span onclick="location.href='#'">배송조회</span>
+                        </li>
+                    </ul>
+                    <div class="pro_cont">
+                        <div>
+                            <a href="detail.html"><img src="img/gift_pro.png" alt="gift_pro" class="gift_pro"></a>
+                        </div>
+                        <div class="tit_wrap">
+                            <a href="detail.html">
+                                <h3>한경희  취커 취향존중 취향511BK/WT경희취커 취향존중 취향511BK/W
+                                </h3>
+                            </a>
+                            <p class="option">옵션 : 기본옵션 <span>/</span> 수량 : 1개</p>
+                            <p class="price">122,400원</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
