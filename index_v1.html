@@ -6,11 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인페이지</title>
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/order.css">
-    <link rel="stylesheet" href="css/sub.css">
     <!-- <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/swiper_style.css"> -->
     <link href="css/font.css" rel="stylesheet" type="text/css" />
@@ -26,7 +22,26 @@
 </head>
 
 <body class="ind01_body">
-    <!-- 하단 바 -->
+    <header>
+        <nav id="here_ind">
+            <div class="content_top_div">
+                <h1><a href="index_v1.html"><img src="img/logo.png" alt="로고"></a></h1>
+            </div>
+            <ul class="content_top_ul">
+                <li>
+                    <a href="search.html"><img src="img/search.png" alt="검색"></a>
+                </li>
+                <li>
+                    <a href="cart.html">
+                        <img src="img/cart.png" alt="장바구니">
+                        <span>99</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 하단 메뉴바-->
     <div class="bottom_menu">
         <ul>
             <li class="menuClick">
@@ -47,7 +62,7 @@
             </li>
         </ul>
     </div>
-    <!-- //하단 바 -->
+    <!-- //하단 메뉴바 -->
 
 
     <!-- 전체메뉴 클릭시 -->
@@ -55,7 +70,7 @@
         <div class="menuModal-content">
             <div class="content_top">
                 <div class="content_top_div">
-                    <h1><img src="img/logo.png" alt="로고"></h1>
+                    <h1><a href="index_v1.html"><img src="img/logo.png" alt="로고"></a></h1>
                 </div>
                 <span class="btn-close-menu menuClick">
                     <img src="img/btn_close.png" alt="닫기">
@@ -144,7 +159,7 @@
                 <div class="modal-body_home">
                     <h2>메인화면 타입을<br />선택해주세요.</h2>
                     <img src="img/btn_close2.png" class="modal_close" alt="닫기">
-                    <div onClick="location.href='index.html'">
+                    <div onClick="location.href='index_v1.html'">
                         <input type="radio" id="index_rad01" checked>
                         <label for="index_rad01">이벤트 위주로 볼래요!<br>
                             <span>기획전 타입</span>
@@ -169,30 +184,19 @@
     <!-- // 홈 타입 클릭시 -->
 
 
+
+
+
+
+
+
+
+
+
+
+
     <div id="wrap">
-        <div class="wrap_01 wrap_js topBar" id="here_ind">
-            <!-- 공통, 상단-->
-            <div class="content_top">
-                <div class="content_top_div">
-                    <h1><img src="img/logo.png" alt="로고"></h1>
-                </div>
-                <ul class="content_top_ul">
-                    <li>
-                        <a href="search.html"><img src="img/search.png" alt="검색"></a>
-                    </li>
-                    <!-- <li>
-                        <a href="index.html"><img src="img/home.png" alt="홈"></a>
-                    </li> -->
-                    <li>
-                        <a href="cart.html">
-                            <img src="img/cart.png" alt="장바구니">
-                            <span>99</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- // 공통, 상단-->
-        </div>
+        
                 
         <div class="content_center">
             <div class="index_mainVisual_m index_mainVisual_m_01">

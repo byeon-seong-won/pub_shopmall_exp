@@ -1,12 +1,33 @@
+
+@import url(common.css);
+@import url(header.css);
+@import url(sub.css);
+@import url(footer.css);
+@import url(modal.css);
+
+ 
+
+
+
+/*---------- mainpage style ----------*/
+
+
+
+
+
+
+
+
+
 .index_mainVisual_m{
   margin-bottom:40px;
   overflow: hidden;
 
 }
 
-.ind01_body .index_mainVisual_m {
+/* .ind01_body .index_mainVisual_m {
   margin-bottom: 20px;
-}
+} */
 
 
 #wrap{
@@ -201,7 +222,7 @@ height: 100%;
 
 }
 
-.ind01_body .content_bottom_index {
+/* .ind01_body .content_bottom_index {
   margin-top: 0;
   overflow-x: scroll;
   padding-bottom: 20px;
@@ -210,7 +231,7 @@ height: 100%;
   overflow-x: scroll;
   cursor: pointer;
 }
-
+ */
 
 
 
