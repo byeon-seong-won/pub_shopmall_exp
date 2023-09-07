@@ -1,0 +1,499 @@
+@import url(common.css);
+
+
+* {
+    word-break: keep-all;
+}
+
+
+
+    body {
+        background-color: #fff;
+    }
+
+
+
+
+    .wrap_01 .select_box input, 
+    .wrap_01>div select {
+        margin-top: 10px;
+        padding: 5px;
+        height: 50px;
+        width: 100%;
+        outline: none;
+        border-radius: 8px;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+    .wrap_01 .select_box input::placeholder {
+        font-family: 'Noto sans KR', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #bbb;
+    }
+    .wrap_01 .select_box input:focus {
+        border: 1px solid #333;
+    }
+    .wrap_01 .select_box input:focus::placeholder {
+        opacity: 0;
+    }
+    .wrap_01 .select_box_flex {
+        display: flex;
+        height: 100%;
+    }
+    .wrap_01 .select_box_flex>input[type="text"] {
+        flex: 3;
+    }
+    .wrap_01 .select_box_flex>button {
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,0.1);
+        flex: 1;
+        border-radius: 8px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .wrap_01 .select_box_flex>button.useBtn {
+        background-color: #f8f8f8;
+        font-family: "Noto sans KR", sans-serif;
+        font-size: 16px;
+        color: #aaa;
+        font-weight: 700;
+    }
+
+
+
+
+    .wrap_01 .content_bottom {
+        /* margin-top: 12px; */
+  
+    }
+    .wrap_01 .content_bottom_cou .tabs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 56px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        margin-top: 20px;
+    }
+    
+    .content_bottom_cou .tabs li {
+        width: calc(100% / 2);
+        text-align: center;
+        line-height: 56px;
+        height: 100%;
+        font-family: 'Noto sans KR', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+ 
+    }
+    .content_bottom_cou .tabs li.on {
+        border-bottom: 4px solid #000;
+        font-weight: 700;
+    }
+  
+
+
+
+
+
+   
+
+    /* .content_bottom.ta_cou_div>.tab_content_ta>div {
+        width: 100%;
+        padding-bottom: 110px;
+    } */
+
+
+
+   
+    .tab_content .detail>div {
+        padding-top: 20px;
+    }
+
+
+    .tab_content .couponImg {
+        margin-top: 21px;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        margin: 0 auto;
+        max-width: 850px;
+    }
+
+    .tab_content .couponImg .img_text_ab {
+        flex: 1;
+        position: relative;
+    }
+    .tab_content .couponImg .img_text_ab>img {
+        width: 100%;
+    }
+
+    .tab_content .couponImg .img_text_ab>ul:nth-of-type(1) {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+
+        text-align: left;
+    }
+
+    .tab_content .couponImg .img_text_ab>ul:nth-of-type(1) li{
+        text-align:center;
+        width:100%;
+    }
+
+    .tab_content .couponImg .img_text_ab>ul:nth-of-type(1) li:nth-child(1) {
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: -1px;
+        color: #000;
+    }
+
+    .tab_content .couponImg .img_text_ab>ul:nth-of-type(1) li:nth-child(2) {
+        font-family: 'Nanum Myeongjo', sans-serif;
+        margin-top: 10px;
+        font-size: 54px;
+        margin-left: 0;
+         font-weight: 800;
+    }
+    .tab_content .couponImg .img_text_ab>ul:nth-of-type(1) li:nth-child(3) {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        font-size: 14px;
+        color: rgba(0,0,0,0.5);
+        margin-top: 10px;
+    }
+
+    .tab_content .couponImg .img_text_ab>ul:nth-of-type(2) {
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        transform: translate(-50%,-50%);
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 24px;
+        color: #fff;
+        writing-mode: vertical-rl;
+        text-orientation:sideways-right
+    }
+
+    .tab_content.tab_content_coupon p {
+        font-family: "Noto sans KR", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+    }
+    .tab_content.tab_content_coupon p>span {
+        color: #51B6D2;
+    }
+
+
+
+    .cou_notify {
+        margin-top: 40px;
+    }
+    .tab_content.tab_content_coupon>div .cou_notify p {
+        font-family: "Noto sans KR", sans-serif;
+        font-weight: 400;
+        color: #666;
+        font-size: 16px;
+    }
+    .tab_content.tab_content_coupon>div .cou_notify p:nth-child(1) {
+        font-weight: 700;
+        color: #000;
+    }
+    .tab_content.tab_content_coupon>div .cou_notify p:nth-child(2) {
+        margin-top:4px;
+    }
+
+    .tab_content.tab_content_coupon>div .nocou>div {
+        text-align: center;
+        width: 35%;
+        max-width: 200px;
+        margin: 80px auto 0;
+    }
+    .tab_content.tab_content_coupon>div .nocou>div>img {
+        width: 140px;
+    }
+    .tab_content.tab_content_coupon>div .nocou>div>p {
+        font-size: 16px;
+        color: #000;
+        line-height: 17.5px;
+        letter-spacing: -0.36px;
+        margin-top: 20px;
+        font-weight: 400;
+    }
+
+
+   
+   
+
+
+@media (min-width:834px) {
+
+    /* .mo_cou {
+        display: none;
+    }
+    
+    .ta_cou {
+        display: block;
+    } */
+    .mobile {
+        display: none;
+    }
+    
+    .tablet {
+        display: block;
+    }
+
+    .content_bottom_cou.ta_cou_div>.tab_content>div {
+        display: none;
+    }
+    .content_bottom_cou.ta_cou_div>.tab_content>div.active {
+        display: block;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+@media (max-width:833.33px) { 
+
+ 
+    .mobile {
+        display: block;
+
+    }
+
+    .tablet {
+        display: none;
+    }
+    
+  
+
+    .content_bottom_cou.mo_cou_div>.tab_content>div {
+        display: none;
+    }
+    .content_bottom_cou.mo_cou_div>.tab_content>div.active {
+        display: block;
+    }
+
+
+
+    .tab_content.tab_content_coupon>div .nocou>div {
+        width: 50%;
+    }
+
+    .tab_content.tab_content_coupon>div .nocou>div>p {
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .wrap_01 .select_box input, 
+    .wrap_01>div select {
+        margin-top: 10px;
+        padding: 5px;
+        height: 50px;
+        width: 100%;
+        outline: none;
+        border-radius: 8px;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+    .wrap_01 .select_box input::placeholder {
+        font-family: 'Noto sans KR', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #bbb;
+    }
+    .wrap_01 .select_box input:focus {
+        border: 1px solid #333;
+    }
+    .wrap_01 .select_box input:focus::placeholder {
+        opacity: 0;
+    }
+    .wrap_01 .select_box_flex {
+        display: flex;
+        height: 100%;
+    }
+    .wrap_01 .select_box_flex>input[type="text"] {
+        flex: 3;
+    }
+    .wrap_01 .select_box_flex>button {
+        background-color: #fff;
+        border: 1px solid rgba(0,0,0,0.1);
+        flex: 1;
+        border-radius: 8px;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    .wrap_01 .select_box_flex>button.useBtn {
+        background-color: #f8f8f8;
+        font-family: "Noto sans KR", sans-serif;
+        font-size: 16px;
+        color: #aaa;
+        font-weight: 700;
+    }
+
+
+
+
+    .wrap_01 .content_bottom {
+        /* margin-top: 12px; */
+  
+    }
+    .wrap_01 .content_bottom_cou .tabs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 56px;
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        margin-top: 20px;
+    }
+    
+    .wrap_01 .content_bottom_cou .tabs li {
+        width: calc(100% / 2);
+        text-align: center;
+        line-height: 56px;
+        height: 100%;
+        font-family: 'Noto sans KR', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+ 
+    }
+    .content_bottom_cou .tabs li.on {
+        border-bottom: 4px solid #000;
+        font-weight: 700;
+    }
+   
+
+
+
+
+    .content_bottom_cou.mo_cou_div>.tab_content_mo>div {
+        /* display: none; */
+        width: 100%;
+        padding-bottom: 110px;
+    }
+    .content_bottom_cou.mo_cou_div>.tab_content_mo>div.active {
+        display: block;
+    }
+
+
+
+
+    .tab_content .couponImg {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        column-gap: 10px;
+        margin: 21px auto 0;
+        max-width: 350px;
+    }
+    .tab_content .couponImg .img_text_ab {
+        flex: 1;
+        position: relative;
+    }
+    .tab_content .couponImg .img_text_ab>img {
+        width: 100%;
+        max-height: 150px;
+   
+    }
+
+    .tab_content .couponImg .img_text_ab>ul:nth-of-type(1) {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        width: 100%;
+    
+    
+    }
+    .tab_content .couponImg .img_text_ab>ul:nth-of-type(1) li:nth-child(1) {
+        font-size: 14px;
+    }
+
+    .tab_content .couponImg .img_text_ab>ul:nth-of-type(1) li:nth-child(2) {
+        font-family: 'Nanum Myeongjo', sans-serif;
+        font-weight:800;
+        margin-top: 0;
+        font-size: 48px;
+        margin-left: 0;
+    }
+    .tab_content .couponImg .img_text_ab>ul:nth-of-type(1) li:nth-child(3) {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(0,0,0,0.5);
+        margin-top: 5px;
+    }
+
+    .tab_content .couponImg .img_text_ab>ul:nth-of-type(2) {
+        position: absolute;
+        top: 50%;
+        left: 90%;
+        transform: translate(-50%,-50%);
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size:20px;
+        color: #fff;
+        writing-mode: vertical-rl;
+        text-orientation:sideways-right
+    }
+
+    .tab_content.tab_content_coupon p {
+        font-family: "Noto sans KR", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: #000;
+        letter-spacing: -1px;
+    }
+    .tab_content.tab_content_coupon p>span {
+        font-family: "Roboto", sans-serif;
+        color: #51B6D2;
+    }
+
+
+
+    .cou_notify {
+        margin-top: 40px;
+    }
+    .tab_content.tab_content_coupon>div .cou_notify p {
+        font-family: "Noto sans KR", sans-serif;
+        font-weight: 400;
+        color: #666;
+        font-size: 14px;
+    }
+    .tab_content.tab_content_coupon>div .cou_notify p:nth-child(1) {
+        font-weight: 700;
+        color: #000;
+    }
+    .tab_content.tab_content_coupon>div .cou_notify p:nth-child(2) {
+        margin-top:12px;
+        font-weight: 400;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,634 @@
+@import url(common.css);
+
+
+* {
+    word-break: keep-all;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-decoration:none;
+}
+
+body{background-color:#fff;}
+
+.bg_gray{background-color:#f8f8f8;}
+
+h2{
+    font-size:24px;
+    font-weight:700;
+    letter-spacing:-1px;
+    margin-bottom:20px;
+}
+
+h2 span{
+    font-family: 'roboto';
+}
+
+.content_top_ul {
+    display: flex;
+}
+.content_top_ul li img{
+    width:100%;
+
+}
+.content_top_ul li {
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    cursor: pointer;
+    position:relative;
+}
+.content_top_ul li:first-child {
+    margin-left: 0;
+}
+.content_top_ul li span {
+    position:absolute;
+    top:-5px; 
+    right:-6px; 
+    font-size:10px;
+    background-color:#51B6D2;
+    border-radius:60px;
+    font-family:'roboto';
+    color:#fff;
+    width:16px;
+    height:16px;
+    padding-top:2px;
+    text-align:center;
+    
+}
+
+/* 마이페이지 */
+.content_center {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    padding-top: 40px;
+
+}
+.myInfor_wp, .pointInfor_wp {
+    display: flex;
+    width: 100%;
+}
+
+.myInfor_wp div:not(.myInforCon), .pointInfor_wp div:not(.myInforCon) {
+    width:50%;
+    height:122px;
+    padding:26px 40px;
+    border-radius: 8px;
+}
+
+.myInfor_wp div.myInfor{
+    position:relative;
+    border-radius: 8px;
+    background-color:#51B6D2;
+    color:#fff;
+    margin-right:6px;
+}
+
+
+.pointInfor_wp div.myInfor {
+    position:relative;
+    background-color:#51B6D2;
+    color:#fff;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right:solid 1px #fff;
+}
+
+.pointInfor_wp div.pointInfor {
+    position:relative;
+    background-color:#51B6D2;
+    color:#fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.myInfor p.name{
+    font-size:24px;
+    font-weight:800;
+}
+
+.myInfor p.name span{
+    font-weight:400;
+}
+
+.myInfor p.point span{
+    font-size:24px;
+    font-weight:800;
+}
+
+.myInfor img{
+    position: absolute;
+    right:24px;
+    top:36px;
+}
+
+.orderInfor {
+    width:100%;
+    display:flex;
+    border:1px solid rgba(0,0,0,0.1);
+    margin-left:6px;
+}
+.orderInfor dl{
+   width:33%;
+   text-align:center;
+   margin-top:6px;
+   cursor:pointer;
+}
+
+.orderInfor dl dd{
+    font-family: 'roboto';
+    font-size:30px;
+    font-weight:800;
+}
+
+.orderInfor dl dt{
+    clear:both;
+}
+
+.pointInfor dl{
+    width:100%;
+    display:flex;
+}
+
+.pointInfor dl:nth-child(2){
+    margin-top:10px;
+}
+
+.pointInfor dl dt{
+    margin-top:5px;
+    font-size:16px;
+}
+
+.pointInfor dl dd{
+    font-size:28px;
+    font-family: 'roboto';
+    font-weight:800;
+    text-align:right;
+    position:absolute;
+    right:40px;
+}
+
+.sbucont_wp {
+    width:100%;
+    padding:40px;
+    overflow: hidden;
+}
+
+
+.sbucont_wp div.tit{
+    width:100%;
+    display: flex;
+    position:relative;
+}
+
+.sbucont_wp div.tit p{
+    position:absolute;
+    top:10px;
+    right:20px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.sbucont_wp div.tit span{
+    position:absolute;
+    top:3px;
+}
+
+.odering_infor{
+    display: flex;
+    width: 100%;
+}
+
+.odering_infor div:not(.orderStep, .thumb_03){
+    width:50%;
+    height:122px;
+    border-radius: 8px;
+    background-color:#fff;
+    border:1px solid rgba(0,0,0,0.1);
+}
+
+.odering_infor div.thumb_03_wp{
+    margin-left:6px;
+  }
+  .odering_infor div.thumb_03{
+    width:100%;
+    display:flex;
+    padding:16px;
+    border-radius: 8px;
+  }
+  
+.odering_infor div.orderStep_wp{
+    position:relative;
+    margin-right:6px;
+}
+
+.odering_infor div.orderStep_wp div.orderStep{
+    position:absolute;
+    width:276px;
+    height:77px;
+    left:50%;
+    margin-left:-138px;
+    border:none;
+    padding:24px 0;
+}
+
+.odering_infor div.orderStep_wp div.orderStep ul{
+    display: flex;
+}
+
+.odering_infor div.orderStep_wp div.orderStep li{
+    width:25%;
+    font-size:15px;
+    letter-spacing:-1px;
+    text-align:center;
+    color:#aaa;
+    position:relative;
+}
+
+.orderStep ul li img{
+    width:52px;
+}
+
+.orderStep ul li.active img{
+    background-color:#51B6D2;
+    border-radius:90px;
+}
+
+.odering_infor div.orderStep_wp div.orderStep li span{
+    position:absolute;
+    top:25px;
+    left:-10px;
+    width:20px;
+    height:1px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.odering_infor div.orderStep_wp div.orderStep li.active span{
+    position:absolute;
+    top:25px;
+    left:-10px;
+    width:20px;
+    height:1px;
+    background-color:#51B6D2;
+}
+
+.odering_infor div.orderStep_wp div.orderStep li.active{
+    color:#51B6D2;
+    font-weight:500;
+}
+
+ 
+
+.thumb_product_mypage{
+    width:33%;
+}
+
+.thumb_product_mypage .swiper-wrapper{
+    width:100%;
+    display:flex;
+}
+
+
+.thumb_02{
+    margin-right:12px;
+  }
+ 
+/* 텝 */
+.point_content .content_bottom {
+    width:100%; padding:40px;
+}
+.point_content .content_bottom .tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 56px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  .point_content .content_bottom .tabs li {
+    width: calc(100% / 2);
+    text-align: center;
+    line-height: 56px;
+    height: 100%;
+    font-family: 'Noto sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .point_content .content_bottom .tabs li.on {
+    border-bottom: 4px solid #000;
+    font-weight: 700;
+  }
+  
+  
+  
+  
+  .point_content .content_bottom>.tab_content>div.active {
+    display: block;
+  }
+  
+  .tab_content>div {
+    width: 100%;
+  
+  }
+  .point_content .content_bottom>.tab_content>div{
+    display: none;
+  }
+
+.pointList ul{
+    margin-top:40px;
+    width:100%; 
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap:12px;
+    
+}
+
+.pointList ul li{
+    color:#aaa;
+    width:100%;
+    border-radius: 8px;
+    border:solid 1px rgba(0,0,0,0.1);
+    padding:24px 20px;
+    position:relative;
+    margin-bottom:12px;
+}
+
+.pointList ul li div{
+    color:#000;
+    font-size:18px;
+    width:70%;
+}
+
+.pointList ul li div b{
+    padding-right:5px;
+}
+
+.pointList ul li span{
+    color:#51B6D2;
+    font-size:18px;
+    font-family:'roboto';
+    font-weight:800;
+    position:absolute;
+    right:20px;
+    top:52px;
+}
+
+.bottom_bd{background-color:#f8f8f8; width:100%; height:12px; margin-top:10px;}
+
+
+
+@media (min-width:834px) {
+   
+    /* #wrap {
+        width: 100%;
+        height: 100%;
+        z-index: 100000;    
+        position: relative;
+        overflow: hidden;
+    } */
+
+    .wrap_01, .wrap_02 {
+        padding: 0 40px;
+        background-color: #fff;
+    }
+   
+
+    .wrap_02 {
+        margin-top: 12px;
+    }
+  
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width:833px) {
+    *{font-size:14px;}
+
+    #wrap {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .wrap_01, .wrap_02 {
+        padding: 0 20px;
+        background-color: #fff;
+    }
+   
+
+    .wrap_02 {
+        margin-top: 12px;
+    }
+  
+    /* 상단 */
+    .content_top {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content_top_div {
+ 
+    }
+    .content_top_div span:nth-child(2) {
+        font-family: 'Noto sans KR', sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+
+
+    /* 마이페이지 */
+    .content_center{
+        padding-bottom:32px;
+    }
+
+    .myInfor_wp, .odering_infor, .pointInfor_wp{
+        display:block;
+    }
+    .myInfor_wp div:not(.myInforCon){
+        width:100%;
+        border-radius:0;
+        height:86px;
+        padding:16px 20px;
+    }
+
+    .pointInfor_wp div:not(.myInforCon){
+        width:100%;
+        border-radius:0;
+        height:86px;
+        padding:16px 20px;
+    }
+
+    .myInfor_wp div.myInfor, .pointInfor_wp div.myInfor {
+        margin-right:0;
+        border-radius:0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        border:none;
+    }
+
+    .myInfor_wp div.orderInfor{
+        margin-left:0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+
+    .pointInfor_wp div.pointInfor{
+        margin-left:0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border-top:solid 1px #fff;
+        padding-bottom:20px;
+    }
+    .pointInfor dl:nth-child(2){
+        margin-top:0;
+    }
+
+    .pointInfor dl dd{
+        font-size:24px;
+    }
+
+    .myInfor p.name{
+        font-size:18px;
+    }
+
+    .myInfor p.point span{
+        font-size:18px;
+    }
+    
+    .myInfor img{
+        top:20px;
+        right:4px;
+    }
+
+    .orderInfor dl{
+        margin-top:0;
+    }
+
+    .orderInfor dl dd {
+        font-size:24px;
+    }
+
+    .sbucont_wp{
+        padding:24px 20px 32px;
+        clear:both;
+    }
+
+    h2{
+        font-size:18px;
+        margin-bottom:12px;
+    }
+
+    .sbucont_wp div.tit p{
+        top:5px;
+        font-size:12px;
+    }
+
+    .odering_infor div:not(.orderStep, .thumb_03){
+        width:100%;
+        
+    }
+
+    .odering_infor div.orderStep_wp{
+        margin-right:0;
+        border:none;
+        background:none;
+    }
+
+    .odering_infor div.orderStep_wp div.orderStep{
+        padding:17px 0;
+        background:none;
+    }
+
+    .odering_infor div.orderStep_wp div.orderStep li{
+        font-size:14px;
+    }
+
+    .odering_infor div.thumb_03{
+        border-radius: 8px;
+        margin-left:0;
+    }
+
+    
+
+    .thumb_product_mypage{
+        width:48%;
+    }
+
+    
+
+    .top_img{
+        height:140px;
+        background-size:cover;
+    }
+    
+    .top_img h3{
+        font-size:32px;
+        height:140px;
+        line-height:140px;
+    }
+
+    .odering_infor div.thumb_03_wp{
+        margin-left:0;
+    }
+    .pointList{
+        padding:0;
+    }
+    .pointList ul{
+        display:block;
+        margin-top:20px;
+    }
+
+    .pointList ul li div{
+        font-size:14px;
+        width:70%;
+    }
+
+    .pointList ul li span{
+        top:40px;
+    }
+   
+    .point_content .content_bottom {
+        padding:20px;
+    }
+
+    .point_content .content_bottom .tabs li {
+        font-size: 16px;
+      }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

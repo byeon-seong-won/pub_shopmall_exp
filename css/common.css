@@ -1,4 +1,6 @@
-/*---------- 웹폰트 CDN ----------*/
+@charset "utf-8"; 
+
+/* 웹폰트 CDN */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 /* font-family: 'Noto Sans KR', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
@@ -19,118 +21,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 /* font-family: 'Bebas Neue', cursive; */
 
-@font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
-/* roboto */
-@font-face {
-    font-family: 'roboto';
-    font-weight: bolder;
-    font-style: normal;
-    src: url('../font/roboto-black.woff') format('woff');
-}
-@font-face {
-    font-family: 'roboto';
-    font-weight: bolder;
-    font-style: italic;
-    src: url('../font/roboto-blackitalic.woff') format('woff');
-}
-@font-face {
-    font-family: 'roboto';
-    font-weight: 700;
-    font-style: normal;
-    src: url('../font/roboto-bold.woff') format('woff');
-}
-@font-face {
-    font-family: 'roboto';
-    font-weight: 700;
-    font-style: italic;
-    src: url('../font/roboto-bolditalic.woff') format('woff');
-}
-@font-face {
-    font-family: 'roboto';
-    font-weight: 500;
-    font-style: italic;
-    src: url('../font/roboto-italic.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'roboto';
-    font-weight: 500;
-    font-style: normal;
-    src: url('../font/roboto-medium.woff') format('woff');
-}
-@font-face {
-    font-family: 'roboto';
-    font-weight: 400;
-    font-style: italic;
-    src: url('../font/roboto-mediumitalic.woff') format('woff');
-}
-@font-face {
-    font-family: 'roboto';
-    font-weight: 400;
-    font-style: normal;
-    src: url('../font/roboto-regular.woff') format('woff');
-}
-@font-face {
-    font-family: 'roboto';
-    font-weight: 300;
-    font-style: normal;
-    src: url('../font/roboto-light.woff') format('woff');
-}
-@font-face {
-    font-family: 'roboto';
-    font-weight: 300;
-    font-style: italic;
-    src: url('../font/roboto-lightitalic.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'roboto';
-    font-weight: 200;
-    font-style: normal;
-    src: url('../font/roboto-thin.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'roboto';
-    font-weight:200;
-    font-style: italic;
-    src: url('../font/roboto-thinitalic.woff') format('woff');
-}
-
-
-/*---------- 아이콘폰트 CDN ----------*/
+/* 아이콘폰트 CDN */
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
+/* <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />  */
+/* font-family: 'Material Icons Outlined'; */
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> */
+/* font-family: fontawesome; */
 @import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css'); 
+/* <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"> */
+/* font-family: xeicon;  */
 
 
+*{  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+h1 img{height:28px;}
 
 
-/*---------- 공통 속성 ----------*/
-*{ margin: 0;padding: 0;font-family: 'Noto Sans KR', sans-serif;}
-html, body {width: 100%;height: 100%;}
-html {overflow-y: scroll; overflow-x: hidden; } 
+html{
+  overflow-y:scroll; 
+  overflow-x:hidden;  
+}
+
+body{
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
 article,aside,details,summary,figcaption,figure,
-footer,header,hgroup,main,nav,section {display: block;}
-li {list-style-type: none;} 
-a {text-decoration: none;color: inherit;} 
-table {border-collapse: collapse;}
-input, select {vertical-align: middle;}
+footer,header,hgroup,main,nav,section{ 
+	display:block;  
+}
+
+li{list-style-type: none;}  
+
+a{
+  text-decoration: none;   
+  color: inherit;  
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-size:100%; 
+	font-weight: normal;  
+	margin-top: 0;  
+}
+
+h2 b{
+  font-family: 'roboto';
+  font-size:26px;
+}
+
+button,input{
+	outline: none;
+}
 button,
 input[type=button],
 input[type=submit],
-input[type=reset]{cursor: pointer;}
-button,input{outline: none;}
-h1,h2,h3,h4,h5,h6{font-size:100%; font-weight: normal; margin-top: 0; }
-img{vertical-align:top;font-size:0;border:0;}
+input[type=reset]{
+	cursor: pointer;
+}
 
+img{
+	vertical-align:top;
+	font-size:0; 
+	border:0;
+}
 
+table{border-collapse:collapse;}  
+
+input, select{vertical-align:middle;}  
+
+.clear:after{   
+	content:"";
+	display:block;
+	clear:both;
+}
+
+.indent{   
+	display:block;
+	text-indent:-9999px;
+}
 
 
 
@@ -192,11 +166,11 @@ img{vertical-align:top;font-size:0;border:0;}
 
 
 
-/* .topBar {
+.topBar {
   top: 0;
   position: fixed;
   z-index: 1000;
-} */
+}
 
 
 
@@ -218,14 +192,17 @@ img{vertical-align:top;font-size:0;border:0;}
 
 
 
-
-/* .bottom_menu {
+/* 하단 메뉴바 */
+.bottom_menu {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: rgba(255, 255, 255,0.9);
   z-index: 100000;
+  /* padding-top: 8px; */
+  /* border: 1px solid #000; */
+  /* padding: 5px; */
   height: 60px;
 
 }
@@ -265,14 +242,14 @@ img{vertical-align:top;font-size:0;border:0;}
   font-size: 14px;
   color: #666;
   margin-bottom: 2px;
-} */
+}
 
 
 
 
 /* 상단 */ 
 
-/* .content_top_ul {
+.content_top_ul {
     display: flex;
 }
 .content_top_ul li>a>img{
@@ -297,6 +274,8 @@ img{vertical-align:top;font-size:0;border:0;}
     border-radius:60px;
     font-family:'roboto';
     color:#fff;
+    /* width:16px;
+    height:16px; */
     width: 20px;
     height:20px;  
     text-align:center;
@@ -311,13 +290,15 @@ img{vertical-align:top;font-size:0;border:0;}
 	justify-content: space-between;
 	align-items: center;
 }
+.content_top_div {
 
+}
 .content_top_div span {
 	font-family: 'Noto sans KR', sans-serif;
 	font-size: 18px;
 	font-weight: 500;
 	line-height: 20px;
-} */
+}
 
 
 .gift_pro {
@@ -1115,7 +1096,7 @@ h2 b{
 
 /* 하단 바 */
 
-/* .bottom_menu>ul>li>img {
+.bottom_menu>ul>li>img {
   width: 24px;
   height: 24px;
   margin-bottom: 4px;
@@ -1123,7 +1104,7 @@ h2 b{
 .bottom_menu>ul>li>span {
   font-size: 10px;
   margin-bottom: 4px;
-} */
+}
 
 
 

@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>장바구니</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/sub.css">
     <!-- <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/swiper_style.css"> -->
     <link href="css/font.css" rel="stylesheet" type="text/css" />
@@ -17,20 +21,41 @@
 </head>
 <body class="cart_body">
     
-    <header>
-        <nav id="here_ind">
+<!-- 장바구니 노출 -->
+<div class="content_footer content_footer_gift content_footer_order">
+    <h3><a href="order.html">주문하기</a></h3>
+</div>
+<!-- //장바구니 노출 -->
+
+<!-- 선택삭제 클릭시 노출 -->
+<div class="content_footer content_footer_gift like_footer like_footer_del" style="display: none;">
+    <ul>
+        <li>
+            상품을 삭제했습니다.
+        </li>
+    </ul>
+</div>
+<!--//선택삭제 클릭시 -->
+
+
+
+<div id="wrap">
+    <div class="wrap_01 wrap_js topBar" id="here_ind">
+        <!-- 공통, 상단-->
+        <div class="content_top">
             <div class="content_top_div">
-                <h1><a href="index_v1.html"><img src="img/logo.png" alt="로고"></a></h1>
+                <a href="#"><span class="xia xi-angle-left-thin"></span></a>
+                <span>장바구니</span>
             </div>
             <ul class="content_top_ul">
                 <li>
                     <a href="search.html"><img src="img/search.png" alt="검색"></a>
                 </li>
+                <!-- 메인페이지만 미노출 -->
                 <li>
-                    <a href="index_v1.html">
-                        <img src="img/home.png" alt="장바구니">
-                    </a>
+                    <a href="index.html"><img src="img/home.png" alt="홈"></a>
                 </li>
+                <!-- // 메인페이지만 미노출 -->
                 <li>
                     <a href="cart.html">
                         <img src="img/cart.png" alt="장바구니">
@@ -38,30 +63,10 @@
                     </a>
                 </li>
             </ul>
-        </nav>
-    </header>
-
-
-    <!-- 장바구니 노출 -->
-    <div class="content_footer content_footer_gift content_footer_order">
-        <h3><a href="order.html">주문하기</a></h3>
-    </div>
-    <!-- //장바구니 노출 -->
-
-    <!-- 선택삭제 클릭시 노출 -->
-    <div class="content_footer content_footer_gift like_footer like_footer_del" style="display: none;">
-        <ul>
-            <li>
-                상품을 삭제했습니다.
-            </li>
-        </ul>
-    </div>
-    <!--//선택삭제 클릭시 -->
-
-
-
-<div id="wrap">
-
+        </div>
+        <!-- // 공통, 상단-->
+        </div>
+   
         <div class="wrap_01 wrap_js seco_wrap_01">
             <div class="checkbox cart_select">
                 <input type="checkbox" id="cart_ck" name="cart_chk">
